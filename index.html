@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>聚空間官網 — 首頁 × 房東專區 視覺稿</title>
+<title>聚空間 The Meeting Place｜首頁</title>
 <style>
   :root {
     color-scheme: light;
@@ -25,15 +25,13 @@
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--line); font-family: var(--font-brand); }
+  body { margin: 0; background: var(--paper); font-family: var(--font-brand); }
   a { color: inherit; }
   h1, h2, h3, h4 { font-family: var(--font-brand); font-weight: 700; margin: 0; text-wrap: balance; color: var(--ink); }
   p { margin: 0; line-height: 1.7; }
 
   .frame {
-    max-width: 1180px; margin: 20px auto 60px; background: var(--paper);
-    border: 1px solid var(--line-strong); box-shadow: 0 24px 60px -30px rgba(0,0,0,0.35);
-    overflow: hidden;
+    background: var(--paper);
   }
   .tab-input { display: none; }
   .page { display: none; animation: pageFadeIn .5s ease; }
@@ -2601,6 +2599,29 @@
 
 <script>
 (function () {
+  // 切換主頁面時更新瀏覽器分頁標題
+  var pageTitles = {
+    'tab-home': '首頁',
+    'tab-buildings': '共居據點',
+    'tab-landlord': '委託管理',
+    'tab-about': '關於我們',
+    'tab-contact-tenant': '聯絡我們－我要租屋',
+    'tab-contact-landlord': '聯絡我們－我是屋主',
+    'tab-b-songshan': '松山館',
+    'tab-b-guting1': '古亭1館',
+    'tab-b-xinyi': '信義館',
+    'tab-b-shida': '師大館',
+    'tab-b-guting2': '古亭2館',
+    'tab-b-zhongshan': '中山館'
+  };
+  document.querySelectorAll('input[name="pgtab"]').forEach(function (el) {
+    el.addEventListener('change', function () {
+      if (el.checked && pageTitles[el.id]) {
+        document.title = '聚空間 The Meeting Place｜' + pageTitles[el.id];
+      }
+    });
+  });
+
   // 切換主頁面時捲動回頂部
   document.querySelectorAll('input[name="pgtab"]').forEach(function (el) {
     el.addEventListener('change', function () {
