@@ -30,6 +30,18 @@
   h1, h2, h3, h4 { font-family: var(--font-brand); font-weight: 700; margin: 0; text-wrap: balance; color: var(--ink); }
   p { margin: 0; line-height: 1.7; }
 
+  .back-to-top {
+    position: fixed; right: 24px; bottom: 24px; width: 48px; height: 48px; z-index: 90;
+    border: none; border-radius: 50%; background: var(--accent); color: #fff; font-size: 20px;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    box-shadow: 0 10px 24px -8px rgba(0,0,0,.4);
+    opacity: 0; visibility: hidden; transform: translateY(12px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s;
+  }
+  .back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+  .back-to-top:hover { transform: translateY(-3px); }
+  @media (max-width: 640px) { .back-to-top { right: 16px; bottom: 16px; width: 42px; height: 42px; font-size: 17px; } }
+
   .frame {
     background: var(--paper);
   }
@@ -2597,6 +2609,8 @@
   </div>
 </div>
 
+<button type="button" class="back-to-top" id="back-to-top" aria-label="回到頁面頂端">↑</button>
+
 <script>
 (function () {
   // 切換主頁面時更新瀏覽器分頁標題
@@ -2674,6 +2688,19 @@
     e.preventDefault();
     llForm.classList.add('is-hidden');
     llSuccess.classList.add('is-shown');
+  });
+})();
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    if (window.scrollY > 400) { btn.classList.add('is-visible'); }
+    else { btn.classList.remove('is-visible'); }
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   });
 })();
 </script>
