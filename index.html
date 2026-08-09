@@ -442,11 +442,13 @@
   #tab-contact-tenant:checked ~ #view-contact .contact-toggle label[for="tab-contact-tenant"] { background: var(--tenant); color: #fff; }
   #tab-contact-landlord:checked ~ #view-contact .contact-toggle label[for="tab-contact-landlord"] { background: var(--landlord); color: #fff; }
   .ct-panel { display: none; background: var(--tenant-soft); padding: 44px; }
+  #ct-panel-tenant { background: transparent; }
   .ct-panel.landlord { background: var(--landlord-soft); }
   #tab-contact-tenant:checked ~ #view-contact #ct-panel-tenant { display: grid; }
   #tab-contact-landlord:checked ~ #view-contact #ct-panel-landlord { display: grid; }
-  #ct-extra-tenant, #ct-steps-tenant { display: none; }
+  #ct-extra-tenant, #ct-steps-tenant, #ct-extra-landlord { display: none; }
   #tab-contact-tenant:checked ~ #view-contact #ct-extra-tenant, #tab-contact-tenant:checked ~ #view-contact #ct-steps-tenant { display: block; }
+  #tab-contact-landlord:checked ~ #view-contact #ct-extra-landlord { display: block; }
   .ct-steps-title { text-align: center; font-size: 19px; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
   .ct-steps-row { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; max-width: 1160px; margin: 36px auto 0; padding: 0 24px; }
   .ct-step { width: 240px; display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -1576,7 +1578,7 @@
         <label for="tab-contact-landlord">我有房子</label>
       </div>
 
-      <div class="ct-panel v2-striped" id="ct-panel-tenant">
+      <div class="ct-panel" id="ct-panel-tenant">
         <div class="v2-ct-illust asset-contact-tenant-illust"></div>
         <div class="v2-ct-card">
           <p>請先點選此連結填寫表單<br><a href="https://forms.gle/ANu6h7EWkJPjBKd59" target="_blank" rel="noopener">https://forms.gle/ANu6h7EWkJPjBKd59</a><br>讓我們了解您的需求，才能為您確認空床狀況<br>填寫完成後請加入<a href="https://lin.ee/ofPOifH" target="_blank" rel="noopener">聚空間官方 LINE 好友</a><br>與我們聯繫<br>傳訊告知填表姓名，我們將盡快回復您</p>
@@ -1591,7 +1593,7 @@
       </div>
     </section>
 
-    <section class="v2-section" style="max-width:680px; text-align:center; padding-top:0; padding-bottom:56px;">
+    <section class="v2-section" id="ct-extra-landlord" style="max-width:680px; text-align:center; padding-top:0; padding-bottom:56px;">
       <span class="section-tag">線上諮詢表單</span>
       <p class="prose" style="font-size:14.5px; color:var(--ink-soft); line-height:1.9;">填寫以下資訊，讓我們了解您的房屋狀況，我們將盡快與您聯繫。</p>
       <div class="landlord-form-wrap">
