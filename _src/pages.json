@@ -131,17 +131,30 @@
       "outPath": "locations/xinyi/index.html",
       "url": "/locations/xinyi/",
       "dataPage": "location-xinyi",
-      "title": "信義館｜共居據點｜聚空間 THE MEETING PLACE",
-      "metaDesc": "信義館：雙捷運核心、寧靜小社群，鄰近捷運藍線永春站。聚空間提供採光極佳的城市共居空間。",
+      "title": "台北信義共居公寓｜上班族・學生租屋住宿｜聚空間信義館",
+      "metaDesc": "聚空間信義館位於台北信義生活圈，鄰近捷運永春站，提供安靜舒適的共居住宿與多人房型，適合上班族、學生及重視交通與生活品質的住客。查看房型、租金、交通與入住資訊。",
       "ogImage": "/assets/images/xinyi-hero.jpg",
-      "jsonld": {
-        "@type": "LodgingBusiness",
-        "name": "聚空間 信義館",
-        "description": "雙捷運核心 × 寧靜小社群 × 採光極佳的城市角落，鄰近捷運藍線永春站。",
-        "areaServed": "台北市 捷運藍線永春站週邊",
-        "url": "https://themeetingplace.pages.dev/locations/xinyi/",
-        "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
-      }
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "聚空間 信義館",
+          "description": "交通便利 × 安靜社區 × 舒服採光，鄰近捷運藍線永春站。",
+          "areaServed": "台北市 捷運藍線永春站週邊",
+          "url": "https://themeetingplace.pages.dev/locations/xinyi/",
+          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "信義館最短可以住多久？", "acceptedAnswer": { "@type": "Answer", "text": "最短租期30天起，實際房況依入住日期而定，歡迎先提供預計入住時間與住宿期間詢問。" } },
+            { "@type": "Question", "name": "信義館適合上班族嗎？", "acceptedAnswer": { "@type": "Answer", "text": "適合。信義館生活環境較安靜，交通也便利，很適合需要固定通勤、重視居住品質的上班族。" } },
+            { "@type": "Question", "name": "外籍住客可以入住嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以。聚空間長期接待外籍學生與海外住客，可依住宿期間協助確認合適房型。" } },
+            { "@type": "Question", "name": "可以開伙嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以，館內設有共用廚房與基本料理設備。" } },
+            { "@type": "Question", "name": "男女會住在同一間房嗎？", "acceptedAnswer": { "@type": "Answer", "text": "房間依性別安排，公共空間則由館內住客共同使用。" } },
+            { "@type": "Question", "name": "怎麼詢問目前空床？", "acceptedAnswer": { "@type": "Answer", "text": "點擊「詢問目前空床」，提供入住日期、住宿期間、性別與人數，我們會協助確認。" } }
+          ]
+        }
+      ]
     },
     {
       "key": "location-shida",
@@ -149,17 +162,30 @@
       "outPath": "locations/shida/index.html",
       "url": "/locations/shida/",
       "dataPage": "location-shida",
-      "title": "師大館｜共居據點｜聚空間 THE MEETING PLACE",
-      "metaDesc": "師大館：學術氣息、巷弄美食，鬧中取靜，鄰近捷運綠線台電大樓站。聚空間提供適合創作與生活的共居空間。",
+      "title": "台北師大學生住宿｜共居公寓・外籍學生租屋｜聚空間師大館",
+      "metaDesc": "聚空間師大館位於台北師大生活圈，鄰近台灣師範大學與捷運台電大樓站，提供學生、華語生與外籍住客共居住宿。查看房型、租金、交通與入住資訊。",
       "ogImage": "/assets/images/shida-hero.jpg",
-      "jsonld": {
-        "@type": "LodgingBusiness",
-        "name": "聚空間 師大館",
-        "description": "學術氣息 × 巷弄美食 × 鬧中取靜的創意基地，鄰近捷運綠線台電大樓站。",
-        "areaServed": "台北市 捷運綠線台電大樓站週邊",
-        "url": "https://themeetingplace.pages.dev/locations/shida/",
-        "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
-      }
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "聚空間 師大館",
+          "description": "師大生活圈 × 巷弄日常 × 鬧中取靜，鄰近台灣師範大學與捷運綠線台電大樓站。",
+          "areaServed": "台北市 捷運綠線台電大樓站週邊",
+          "url": "https://themeetingplace.pages.dev/locations/shida/",
+          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "師大館適合華語生或外籍學生嗎？", "acceptedAnswer": { "@type": "Answer", "text": "適合。師大館鄰近台灣師範大學與華語學習生活圈，是聚空間較適合學生與外籍住客的據點之一。" } },
+            { "@type": "Question", "name": "最短可以住多久？", "acceptedAnswer": { "@type": "Answer", "text": "最短租期30天起，實際依房型、入住日期與住宿期間確認。" } },
+            { "@type": "Question", "name": "從師大館到台師大方便嗎？", "acceptedAnswer": { "@type": "Answer", "text": "方便，館別位在師大生活圈，鄰近台灣師範大學與台電大樓站。" } },
+            { "@type": "Question", "name": "可以自己煮飯嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以，館內設有共用廚房與基本料理設備。" } },
+            { "@type": "Question", "name": "男女會住在同一間房嗎？", "acceptedAnswer": { "@type": "Answer", "text": "房間依性別安排，公共空間則由所有住客共同使用。" } },
+            { "@type": "Question", "name": "怎麼詢問目前空床？", "acceptedAnswer": { "@type": "Answer", "text": "提供入住日期、住宿期間、性別與人數，我們會協助確認合適房型。" } }
+          ]
+        }
+      ]
     },
     {
       "key": "location-guting1",
@@ -167,17 +193,30 @@
       "outPath": "locations/guting1/index.html",
       "url": "/locations/guting1/",
       "dataPage": "location-guting1",
-      "title": "古亭1館｜共居據點｜聚空間 THE MEETING PLACE",
-      "metaDesc": "古亭1館：全新完工、私藏大陽台，鄰近捷運綠線台電大樓站・橘線古亭站。聚空間提供專注力工作區域與舒適共居生活。",
+      "title": "台北古亭共居公寓｜學生・上班族・遠距工作住宿｜聚空間古亭1館",
+      "metaDesc": "聚空間古亭1館位於台北古亭生活圈，提供全新共居空間、寬敞陽台與適合生活工作的公共區域，適合學生、上班族及遠距工作者。查看房型、租金與入住資訊。",
       "ogImage": "/assets/images/guting1-hero.jpg",
-      "jsonld": {
-        "@type": "LodgingBusiness",
-        "name": "聚空間 古亭1館",
-        "description": "全新完工 × 私藏大陽台 × 專注力工作區域，鄰近捷運綠線台電大樓站・橘線古亭站。",
-        "areaServed": "台北市 捷運綠線台電大樓站・橘線古亭站週邊",
-        "url": "https://themeetingplace.pages.dev/locations/guting1/",
-        "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
-      }
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "聚空間 古亭1館",
+          "description": "全新空間 × 寬敞陽台 × 工作生活兼具，鄰近捷運綠線台電大樓站・橘線古亭站。",
+          "areaServed": "台北市 捷運綠線台電大樓站・橘線古亭站週邊",
+          "url": "https://themeetingplace.pages.dev/locations/guting1/",
+          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "古亭1館適合遠距工作嗎？", "acceptedAnswer": { "@type": "Answer", "text": "適合。館內有適合工作與使用電腦的空間，也有較安靜的生活氛圍。" } },
+            { "@type": "Question", "name": "最短可以住多久？", "acceptedAnswer": { "@type": "Answer", "text": "最短租期30天起，實際依入住日期與房況確認。" } },
+            { "@type": "Question", "name": "適合學生入住嗎？", "acceptedAnswer": { "@type": "Answer", "text": "適合。古亭生活圈鄰近師大、台大與多個校園，交通與生活機能都很方便。" } },
+            { "@type": "Question", "name": "可以開伙嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以，館內提供共用廚房與基本料理設備。" } },
+            { "@type": "Question", "name": "男女會住在同一間房嗎？", "acceptedAnswer": { "@type": "Answer", "text": "房間依性別安排，公共空間共同使用。" } },
+            { "@type": "Question", "name": "怎麼確認目前空床？", "acceptedAnswer": { "@type": "Answer", "text": "提供入住日期、住宿期間、性別與人數，我們會協助確認。" } }
+          ]
+        }
+      ]
     },
     {
       "key": "location-guting2",
@@ -185,17 +224,30 @@
       "outPath": "locations/guting2/index.html",
       "url": "/locations/guting2/",
       "dataPage": "location-guting2",
-      "title": "古亭2館｜共居據點｜聚空間 THE MEETING PLACE",
-      "metaDesc": "古亭2館：雙捷運核心、明亮採光，充滿生活感的家，鄰近捷運綠線台電大樓站・橘線古亭站。",
+      "title": "台北古亭共居公寓｜學生・上班族租屋住宿｜聚空間古亭2館",
+      "metaDesc": "聚空間古亭2館位於台北古亭生活圈，提供明亮寬敞的公共空間與多人共居房型，適合學生、上班族與重視共享生活品質的住客。查看房型、租金、交通與入住資訊。",
       "ogImage": "/assets/images/guting2-hero.jpg",
-      "jsonld": {
-        "@type": "LodgingBusiness",
-        "name": "聚空間 古亭2館",
-        "description": "雙捷運核心 × 明亮採光 × 充滿生活感的家，鄰近捷運綠線台電大樓站・橘線古亭站。",
-        "areaServed": "台北市 捷運綠線台電大樓站・橘線古亭站週邊",
-        "url": "https://themeetingplace.pages.dev/locations/guting2/",
-        "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
-      }
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "聚空間 古亭2館",
+          "description": "明亮採光 × 寬敞公共空間 × 舒服共居日常，鄰近捷運綠線台電大樓站・橘線古亭站。",
+          "areaServed": "台北市 捷運綠線台電大樓站・橘線古亭站週邊",
+          "url": "https://themeetingplace.pages.dev/locations/guting2/",
+          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "古亭2館適合學生嗎？", "acceptedAnswer": { "@type": "Answer", "text": "適合。古亭生活圈鄰近師大、台大與多個校園，交通與生活機能都很方便。" } },
+            { "@type": "Question", "name": "最短可以住多久？", "acceptedAnswer": { "@type": "Answer", "text": "最短租期30天起，實際依房況與入住日期確認。" } },
+            { "@type": "Question", "name": "古亭2館公共空間大嗎？", "acceptedAnswer": { "@type": "Answer", "text": "古亭2館的主要特色之一就是寬敞客廳與共享餐桌，適合希望有完整公共生活空間的住客。" } },
+            { "@type": "Question", "name": "可以開伙嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以，館內提供共用廚房與基本料理設備。" } },
+            { "@type": "Question", "name": "男女會住在同一間房嗎？", "acceptedAnswer": { "@type": "Answer", "text": "房間依性別安排，公共空間共同使用。" } },
+            { "@type": "Question", "name": "怎麼詢問目前空床？", "acceptedAnswer": { "@type": "Answer", "text": "點擊「詢問目前空床」，提供入住日期、住宿期間、性別與人數，我們會協助確認。" } }
+          ]
+        }
+      ]
     },
     {
       "key": "location-zhongshan",
@@ -203,17 +255,30 @@
       "outPath": "locations/zhongshan/index.html",
       "url": "/locations/zhongshan/",
       "dataPage": "location-zhongshan",
-      "title": "中山館｜共居據點｜聚空間 THE MEETING PLACE",
-      "metaDesc": "中山館：行天宮生活圈、國際氛圍，輕工業風格的家，鄰近捷運橘線行天宮站。",
+      "title": "台北行天宮共居公寓｜外籍學生・上班族租屋｜聚空間中山館",
+      "metaDesc": "聚空間中山館位於台北中山區行天宮生活圈，鄰近捷運行天宮站，提供多人共居房型與工業風共享空間，適合外籍學生、上班族與喜歡國際交流的住客。",
       "ogImage": "/assets/images/zhongshan-hero.jpg",
-      "jsonld": {
-        "@type": "LodgingBusiness",
-        "name": "聚空間 中山館",
-        "description": "行天宮生活圈 × 國際氛圍 × 輕工業風格的家，鄰近捷運橘線行天宮站。",
-        "areaServed": "台北市 捷運橘線行天宮站週邊",
-        "url": "https://themeetingplace.pages.dev/locations/zhongshan/",
-        "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
-      }
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "聚空間 中山館",
+          "description": "行天宮生活圈 × 國際交流 × 個性工業風，鄰近捷運橘線行天宮站。",
+          "areaServed": "台北市 捷運橘線行天宮站週邊",
+          "url": "https://themeetingplace.pages.dev/locations/zhongshan/",
+          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "中山館適合外籍住客嗎？", "acceptedAnswer": { "@type": "Answer", "text": "適合。中山館住客背景較多元，很適合希望在台北生活期間認識不同室友的外籍學生與海外住客。" } },
+            { "@type": "Question", "name": "最短可以住多久？", "acceptedAnswer": { "@type": "Answer", "text": "最短租期30天起，實際依房況與入住期間確認。" } },
+            { "@type": "Question", "name": "中山館離捷運近嗎？", "acceptedAnswer": { "@type": "Answer", "text": "鄰近捷運行天宮站，日常通勤與往返台北市中心都很方便。" } },
+            { "@type": "Question", "name": "可以開伙嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以，館內提供共用廚房與基本料理設備。" } },
+            { "@type": "Question", "name": "男女會住在同一間房嗎？", "acceptedAnswer": { "@type": "Answer", "text": "房間依性別安排，公共空間共同使用。" } },
+            { "@type": "Question", "name": "怎麼詢問空床？", "acceptedAnswer": { "@type": "Answer", "text": "點擊「詢問目前空床」，提供入住日期、住宿期間、性別與人數即可。" } }
+          ]
+        }
+      ]
     }
   ]
 }
