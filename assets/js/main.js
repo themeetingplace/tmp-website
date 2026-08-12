@@ -91,12 +91,10 @@
     function step(ts) {
       if (!startTime) startTime = ts;
       var progress = Math.min((ts - startTime) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 5);
-      el.textContent = Math.floor(eased * target);
+      var eased = 1 - Math.pow(1 - progress, 2);
+      el.textContent = Math.round(eased * target);
       if (progress < 1) {
         requestAnimationFrame(step);
-      } else {
-        el.textContent = target;
       }
     }
     requestAnimationFrame(step);
