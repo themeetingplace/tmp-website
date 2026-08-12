@@ -26,6 +26,20 @@ $scripts = Read-Utf8 (Join-Path $srcDir "partials\scripts.html")
 $landlordForm = Read-Utf8 (Join-Path $srcDir "partials\landlord-form.html")
 $styles = Read-Utf8 (Join-Path $srcDir "styles\main.css")
 
+# CSS/JS 改成外部可快取檔案（原本每頁都內嵌一份 main.css，同樣內容重複下載 12 次，
+# 也無法被瀏覽器快取；現在寫成 /assets/css, /assets/js 底下的真實檔案，
+# 版本號用內容雜湊算，內容一變網址就變，不會被舊快取卡住）
+function Get-ShortHash($text) {
+  $md5 = [System.Security.Cryptography.MD5]::Create()
+  $bytes = $md5.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($text))
+  return ([System.BitConverter]::ToString($bytes) -replace '-','').Substring(0,10).ToLower()
+}
+$cssVer = Get-ShortHash $styles
+$jsVer = Get-ShortHash $scripts
+Write-Utf8 (Join-Path $deployDir "assets\css\main.css") $styles
+Write-Utf8 (Join-Path $deployDir "assets\js\main.js") $scripts
+Write-Output "Built: assets/css/main.css ($cssVer), assets/js/main.js ($jsVer)"
+
 $sitemapEntries = @()
 
 foreach ($p in $manifest.pages) {
@@ -47,6 +61,11 @@ foreach ($p in $manifest.pages) {
     $jsonldBlock = "<script type=`"application/ld+json`">`n$ldJson`n</script>"
   }
 
+  $preloadBlock = ""
+  if ($null -ne $p.preloadImage -and $p.preloadImage -ne "") {
+    $preloadBlock = "<link rel=`"preload`" as=`"image`" href=`"$($p.preloadImage)`">"
+  }
+
   $page = $layout
   $page = $page.Replace("{{TITLE}}", $p.title)
   $page = $page.Replace("{{META_DESC}}", $p.metaDesc)
@@ -55,12 +74,13 @@ foreach ($p in $manifest.pages) {
   $page = $page.Replace("{{OG_DESC}}", $p.metaDesc)
   $page = $page.Replace("{{OG_IMAGE}}", $ogImage)
   $page = $page.Replace("{{JSONLD}}", $jsonldBlock)
-  $page = $page.Replace("{{STYLES}}", $styles)
+  $page = $page.Replace("{{PRELOAD}}", $preloadBlock)
+  $page = $page.Replace("{{CSS_VER}}", $cssVer)
+  $page = $page.Replace("{{JS_VER}}", $jsVer)
   $page = $page.Replace("{{DATA_PAGE}}", $p.dataPage)
   $page = $page.Replace("{{HEADER}}", $header)
   $page = $page.Replace("{{CONTENT}}", $content)
   $page = $page.Replace("{{FOOTER}}", $footer)
-  $page = $page.Replace("{{SCRIPTS}}", $scripts)
 
   $outPath = Join-Path $deployDir $p.outPath
   Write-Utf8 $outPath $page
