@@ -86,12 +86,12 @@
   function animate(el) {
     var target = parseInt(el.getAttribute('data-target'), 10);
     if (isNaN(target)) return;
-    var duration = 1200;
+    var duration = 2800;
     var startTime = null;
     function step(ts) {
       if (!startTime) startTime = ts;
       var progress = Math.min((ts - startTime) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 3);
+      var eased = 1 - Math.pow(1 - progress, 5);
       el.textContent = Math.floor(eased * target);
       if (progress < 1) {
         requestAnimationFrame(step);
