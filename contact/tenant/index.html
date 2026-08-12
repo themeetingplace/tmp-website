@@ -472,6 +472,7 @@
   .ct-notice-item:last-child { margin-bottom: 0; }
   .ct-notice-item h4 { font-size: 16px; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
   .ct-notice-item p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.8; margin: 0; }
+  .ct-notice-caveat { max-width: 560px; margin: 34px auto 0; padding-top: 24px; border-top: 1px solid var(--line-strong); font-size: 13px; color: var(--ink-faint); font-style: italic; line-height: 1.8; }
   @media (max-width: 640px) {
     .ct-steps-row { gap: 28px 20px; }
     .ct-step { width: 130px; }
@@ -487,6 +488,9 @@
   .ct-panel.landlord a { color: var(--landlord); }
   .ct-panel.v2-striped { background: var(--accent-soft); background-image: repeating-linear-gradient(135deg, rgba(232,126,59,.1) 0 14px, transparent 14px 28px); }
   .v2-ct-card { background: #fff; border-radius: 18px; padding: 30px 34px; }
+  .v2-ct-card h3 { font-size: 19px; font-weight: 700; color: var(--ink); text-align: center; margin: 0 0 14px; }
+  .v2-ct-card .btn-pill { display: inline-block; margin-top: 4px; }
+  .ct-panel p.ct-card-note { font-size: 12.5px; color: var(--ink-faint); line-height: 1.8; margin-top: 18px; }
   .v2-ct-card p { text-align: center; font-size: 14.5px; line-height: 2.1; margin: 0; }
   .v2-ct-illust { height: 340px; }
   .asset-landlord-help-person { background-image: url("/assets/images/landlord-help-person.jpg"); background-size: cover; background-position: center; }
@@ -900,9 +904,12 @@
     </header>
 
 
-    <section style="padding:44px 24px 0;">
-      <div class="v2-page-title" style="padding-top:0;"><span>聯絡我們</span></div>
-      <p style="text-align:center; font-size:14px; color:var(--ink-soft); margin-top:20px; max-width:640px; margin-left:auto; margin-right:auto;">無論你正在尋找合適的居住空間，或希望將房屋交給專業團隊管理，歡迎與聚空間聯繫。</p>
+    <section class="hero" style="padding:64px 24px 24px;">
+      <div class="hero-inner" style="max-width:720px;">
+        <p class="eyebrow center">CONTACT FOR TENANTS</p>
+        <h1 style="font-size:clamp(26px,3.2vw,38px);">找到適合你的共居空間，從告訴我們需求開始</h1>
+        <p class="hero-dek">告訴我們預計入住日期、住宿期間與生活需求，我們會協助確認目前空床，並推薦適合你的館別。</p>
+      </div>
     </section>
 
     <section style="padding-top:0;">
@@ -914,43 +921,58 @@
       <div class="ct-panel" id="ct-panel-tenant">
         <div class="v2-ct-illust asset-contact-tenant-illust"></div>
         <div class="v2-ct-card">
-          <p>請先點選此連結填寫表單<br><a href="https://forms.gle/ANu6h7EWkJPjBKd59" target="_blank" rel="noopener">https://forms.gle/ANu6h7EWkJPjBKd59</a><br>讓我們了解您的需求，才能為您確認空床狀況<br>填寫完成後請加入<a href="https://lin.ee/ofPOifH" target="_blank" rel="noopener">聚空間官方 LINE 好友</a><br>與我們聯繫<br>傳訊告知填表姓名，我們將盡快回復您</p>
+          <h3>先告訴我們你的入住需求</h3>
+          <p>填寫租屋需求表單後，我們會依照你的入住日期、住宿期間、性別與生活需求，協助確認目前適合的館別與房型。</p>
+          <a class="btn-pill tenant" href="https://forms.gle/ANu6h7EWkJPjBKd59" target="_blank" rel="noopener">填寫租屋需求表</a>
+          <p class="ct-card-note">填寫完成後，請加入聚空間<a href="https://lin.ee/ofPOifH" target="_blank" rel="noopener">官方 LINE</a>，並告訴我們你的填表姓名，方便我們快速找到資料並回覆你。</p>
         </div>
       </div>
     </section>
 
     <section class="v2-process-row" id="ct-steps-tenant">
-      <p class="ct-steps-title">租屋也可以很簡單</p>
+      <p class="ct-steps-title">租屋其實可以很簡單</p>
       <div class="ct-steps-row">
         <div class="ct-step">
-          <img class="ct-step-icon" src="/assets/images/ill-process-1.png" alt="填寫表單">
-          <span class="ct-step-badge">填寫表單</span>
-          <p>讓我們了解您的需求</p>
+          <img class="ct-step-icon" src="/assets/images/ill-process-1.png" alt="填寫入住需求">
+          <span class="ct-step-badge">01｜填寫入住需求</span>
+          <p>告訴我們預計入住日期、住宿期間、性別與基本需求。</p>
         </div>
         <div class="ct-step">
-          <img class="ct-step-icon" src="/assets/images/ill-process-2.png" alt="聯繫我們">
-          <span class="ct-step-badge">聯繫我們</span>
-          <p>加入官方LINE聯繫我們<br>請告知我們填表姓名</p>
+          <img class="ct-step-icon" src="/assets/images/ill-process-2.png" alt="加入LINE聯繫">
+          <span class="ct-step-badge">02｜加入 LINE 聯繫</span>
+          <p>加入聚空間官方 LINE，並提供你的填表姓名。</p>
         </div>
         <div class="ct-step">
-          <img class="ct-step-icon" src="/assets/images/ill-process-3.png" alt="詢問與預約看房">
-          <span class="ct-step-badge">詢問與預約看房</span>
-          <p>與我們確認空床位狀況<br>是否符合您的需求</p>
+          <img class="ct-step-icon" src="/assets/images/ill-process-3.png" alt="確認房況／預約看房">
+          <span class="ct-step-badge">03｜確認房況／預約看房</span>
+          <p>我們會協助確認合適館別與房型，需要的話也可以安排看房。</p>
         </div>
         <div class="ct-step">
-          <img class="ct-step-icon" src="/assets/images/ill-process-4.png" alt="付款簽約入住">
-          <span class="ct-step-badge">付款簽約入住</span>
-          <p>收到訂金就完成預訂<br>線上簽約快速方便</p>
+          <img class="ct-step-icon" src="/assets/images/ill-process-4.png" alt="確認房型並完成入住">
+          <span class="ct-step-badge">04｜確認房型並完成入住</span>
+          <p>確認房型後，依流程完成訂金／租金、簽約與入住安排。</p>
         </div>
       </div>
     </section>
 
     <div class="ct-notice" id="ct-extra-tenant">
-      <p class="ct-notice-title">這是一些注意事項 在詢問前 請您要知道😊</p>
-      <div class="ct-notice-item"><h4>不提供即時入住</h4><p>床位空間需要整理與準備，如果很急著要入住，建議您去找青年旅館等住宿地點唷</p></div>
-      <div class="ct-notice-item"><h4>我們會篩選房客</h4><p>為保護住在我們空間裡的人，我們把管每一個入住的人</p></div>
-      <div class="ct-notice-item"><h4>這是共居空間</h4><p>需要室友間彼此尊重、配合，也需要遵守公寓規則</p></div>
+      <p class="ct-notice-title">入住前，有幾件事想先讓你知道</p>
+      <div class="ct-notice-item"><h4>01｜我們不提供當天即時入住</h4><p>房間需要整理、確認與入住準備，如果有住宿需求，建議提早與我們聯繫。</p></div>
+      <div class="ct-notice-item"><h4>02｜我們會確認入住需求與適合度</h4><p>為了維持共居品質與住客安全，我們會了解每位住客的基本入住需求與生活方式，再協助安排適合的館別與房型。</p></div>
+      <div class="ct-notice-item"><h4>03｜這裡是共居空間</h4><p>共居代表共享部分生活空間，也需要彼此尊重、保持整潔並遵守館內生活規範。</p></div>
+      <p class="ct-notice-caveat">如果你喜歡完全獨立、不需要與其他住客共享空間的住宿方式，聚空間可能不是最適合你的選擇。</p>
     </div>
+
+    <section class="v2-final-cta">
+      <h2 class="v2-final-cta-title">準備好找你的下一個住處了嗎？</h2>
+      <div class="v2-final-cta-lines">
+        <p>填寫需求後，我們會協助你確認目前空房與適合的共居據點。</p>
+      </div>
+      <div class="v2-final-cta-ctas">
+        <a class="btn-pill tenant" href="https://forms.gle/ANu6h7EWkJPjBKd59" target="_blank" rel="noopener">填寫租屋需求</a>
+        <a class="btn-pill accent" href="https://lin.ee/ofPOifH" target="_blank" rel="noopener">加入官方 LINE</a>
+      </div>
+    </section>
 
     <footer class="site-footer-v2">
       <div class="footer-v2-inner">
