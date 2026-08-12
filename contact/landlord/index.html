@@ -657,6 +657,11 @@
   .v2-case-caption p { font-size: 13px; color: var(--ink-soft); line-height: 1.85; margin: 0; }
   .v2-case-caption p b { color: var(--ink); font-weight: 700; }
 
+  .pm-step-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1080px; margin: 36px auto 0; }
+  .pm-step-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 26px 22px; flex: 0 1 240px; text-align: center; }
+  .pm-step-item h4 { font-size: 15px; margin-bottom: 8px; color: var(--ink); }
+  .pm-step-item p { font-size: 13px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
+
   .pm-checkbox-group { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 6px; }
   .pm-checkbox-item { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ink-soft); white-space: nowrap; flex: 0 0 auto; }
   .pm-checkbox-item input[type="checkbox"] { width: 15px; height: 15px; padding: 0; flex: 0 0 auto; accent-color: var(--landlord); }
@@ -904,9 +909,12 @@
     </header>
 
 
-    <section style="padding:44px 24px 0;">
-      <div class="v2-page-title" style="padding-top:0;"><span>聯絡我們</span></div>
-      <p style="text-align:center; font-size:14px; color:var(--ink-soft); margin-top:20px; max-width:640px; margin-left:auto; margin-right:auto;">無論你正在尋找合適的居住空間，或希望將房屋交給專業團隊管理，歡迎與聚空間聯繫。</p>
+    <section class="hero" style="padding:64px 24px 24px;">
+      <div class="hero-inner" style="max-width:720px;">
+        <p class="eyebrow center eyebrow-landlord">CONTACT FOR LANDLORDS</p>
+        <h1 style="font-size:clamp(26px,3.2vw,38px);">先讓我們了解你的房子</h1>
+        <p class="hero-dek">不論你正在考慮出租、代管、包租或空間整理，先告訴我們房屋現況與需求，我們會依照實際條件提供初步建議。</p>
+      </div>
     </section>
 
     <section style="padding-top:0;">
@@ -918,14 +926,16 @@
       <div class="ct-panel landlord" id="ct-panel-landlord">
         <div class="v2-ct-illust asset-landlord-help-person"></div>
         <div class="v2-ct-card">
-          <p>想委託管理房屋<br><br>想了解房子適合怎麼出租、是否需要整理<br>可以如何管理，歡迎填寫委託表單<br>我們將協助初步評估</p>
+          <h3>想委託管理房屋？先不用急著做決定</h3>
+          <p>每間房子的條件都不同，適合的出租方式也不一樣。<br><br>先告訴我們房屋位置、格局、目前狀況與你最在意的問題，我們會從出租定位、管理方式、空間整理與長期出租角度，協助你做初步判斷。</p>
+          <p style="font-weight:700; color:var(--ink); margin-top:18px;">填寫表單不代表需要立即委託，先了解房子的可能性，再決定下一步。</p>
         </div>
       </div>
     </section>
 
         <section class="v2-section" id="landlord-form" style="max-width:680px; text-align:center; padding-bottom:56px;">
-      <span class="section-tag">先讓我們了解你的房子</span>
-      <p class="prose" style="font-size:14.5px; color:var(--ink-soft); line-height:1.9;">不用先決定要不要委託。<br>先告訴我們房屋位置、房型與目前遇到的問題，我們會依照實際狀況提供初步建議。</p>
+      <span class="section-tag">房屋委託初步評估</span>
+      <p class="prose" style="font-size:14.5px; color:var(--ink-soft); line-height:1.9;">填寫以下資訊，我們會先了解你的房屋條件，再安排後續聯繫。</p>
       <div class="landlord-form-wrap">
         <form class="landlord-form" id="landlord-lead-form">
           <div class="landlord-form-row">
@@ -933,32 +943,54 @@
             <div class="landlord-form-field"><label for="ll-phone">聯絡電話 *</label><input type="tel" id="ll-phone" name="phone" required></div>
           </div>
           <div class="landlord-form-row">
+            <div class="landlord-form-field"><label for="ll-line">LINE ID</label><input type="text" id="ll-line" name="line_id"></div>
             <div class="landlord-form-field"><label for="ll-email">Email</label><input type="email" id="ll-email" name="email"></div>
-            <div class="landlord-form-field"><label for="ll-area">房屋區域</label><input type="text" id="ll-area" name="area" placeholder="例如：台北市大安區"></div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field"><label for="ll-type">房型</label><input type="text" id="ll-type" name="room_type" placeholder="例如：整層、分租雅房"></div>
-            <div class="landlord-form-field"><label for="ll-acreage">坪數</label><input type="number" id="ll-acreage" name="acreage" min="0" step="0.1"></div>
+            <div class="landlord-form-field"><label for="ll-area">房屋所在地區</label><input type="text" id="ll-area" name="area" placeholder="例如：台北市大安區"></div>
+            <div class="landlord-form-field"><label for="ll-type">房屋類型</label><input type="text" id="ll-type" name="property_type" placeholder="例如：公寓、電梯大樓、透天"></div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field full"><label for="ll-message">房屋目前狀況</label><textarea id="ll-message" name="message" placeholder="例如：房屋現況、目前遇到的問題…"></textarea></div>
+            <div class="landlord-form-field"><label for="ll-acreage">房屋坪數</label><input type="number" id="ll-acreage" name="acreage" min="0" step="0.1"></div>
+            <div class="landlord-form-field"><label for="ll-rooms">房間數</label><input type="number" id="ll-rooms" name="room_count" min="0" step="1"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-timing">預計出租時間</label><input type="text" id="ll-timing" name="timing" placeholder="例如：一個月內"></div>
           </div>
           <div class="landlord-form-row">
             <div class="landlord-form-field full">
-              <label>希望的服務</label>
+              <label>目前狀況</label>
               <div class="pm-checkbox-group">
-                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="lease-management">代租代管</label>
-                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="master-lease">包租合作</label>
-                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="assessment">房屋出租評估</label>
-                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="cleanup">空間整理／修繕</label>
-                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="renovation">老屋翻修</label>
-                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="unsure">尚未確定，希望先聊聊</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="vacant">空屋</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="occupied-self">自住中</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="rented">已出租</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="ending-soon">即將退租</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="renovating">裝修中</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="other">其他</label>
               </div>
             </div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field"><label for="ll-timing">預計出租時間</label><input type="text" id="ll-timing" name="timing" placeholder="例如：一個月內"></div>
-            <div class="landlord-form-field"><label for="ll-line">LINE ID（選填）</label><input type="text" id="ll-line" name="line_id"></div>
+            <div class="landlord-form-field full">
+              <label>希望了解的服務</label>
+              <div class="pm-checkbox-group">
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="lease-management">代租代管</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="master-lease">包租合作</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="planning">出租規劃</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="cleanup">空間整理／修繕</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="renovation">老屋翻修</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="unsure">不確定，希望先評估</label>
+              </div>
+            </div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-problem">最想解決的問題</label><input type="text" id="ll-problem" name="main_problem" placeholder="例如：不知道該不該整理再出租"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-photos">可上傳房屋照片</label><input type="file" id="ll-photos" name="photos" accept="image/*" multiple></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-message">備註</label><textarea id="ll-message" name="message" placeholder="其他想讓我們知道的事…"></textarea></div>
           </div>
           <p class="landlord-form-note">送出即表示同意由聚空間與您聯繫，資料僅用於本次諮詢。</p>
           <button type="submit" class="landlord-form-submit">送出房屋資料</button>
@@ -970,6 +1002,21 @@
       </div>
     </section>
 
+
+    <section class="v2-section" style="text-align:center; max-width:1080px;">
+      <p class="section-kicker">送出資料後，我們會怎麼進行？</p>
+      <div class="pm-step-grid">
+        <div class="pm-step-item"><h4>01｜初步了解</h4><p>查看房屋位置、現況與屋主需求。</p></div>
+        <div class="pm-step-item"><h4>02｜電話／LINE 聯繫</h4><p>進一步了解出租目標、目前問題與希望的合作方式。</p></div>
+        <div class="pm-step-item"><h4>03｜安排房屋健檢</h4><p>有需要時安排現場了解房屋狀況與空間條件。</p></div>
+        <div class="pm-step-item"><h4>04｜提出初步建議</h4><p>依照房屋條件提供出租、管理、整理或翻修方向。</p></div>
+      </div>
+    </section>
+
+    <section class="v2-section" style="text-align:center; max-width:680px; padding-bottom:64px;">
+      <p class="section-kicker">先把房子看懂，再決定怎麼經營。</p>
+      <p class="section-sub">聚空間不會先套一種固定的出租模式，而是從房屋條件、區域需求與屋主目標出發，找到比較適合的管理方式。</p>
+    </section>
 
     <footer class="site-footer-v2">
       <div class="footer-v2-inner">
