@@ -689,7 +689,7 @@
   .v2-stats-band { background: var(--accent-soft); padding: 48px 24px; }
   .v2-stats-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px 56px; text-align: center; }
   .v2-stats-item { display: flex; flex-direction: column; align-items: center; }
-  .v2-stats-num { font-size: clamp(26px, 3.6vw, 38px); font-weight: 700; color: var(--accent-ink); font-family: var(--font-brand); }
+  .v2-stats-num { font-size: clamp(34px, 4.8vw, 50px); font-weight: 700; color: var(--accent-ink); font-family: var(--font-brand); }
   .v2-stats-label { font-size: 13px; color: var(--ink-soft); margin-top: 6px; letter-spacing: .04em; }
   .v2-stats-note { text-align: center; font-size: 11.5px; color: var(--ink-faint); margin-top: 20px; }
 
