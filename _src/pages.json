@@ -100,17 +100,30 @@
       "outPath": "locations/songshan/index.html",
       "url": "/locations/songshan/",
       "dataPage": "location-songshan",
-      "title": "松山館｜共居據點｜聚空間 THE MEETING PLACE",
-      "metaDesc": "松山館：百坪大宅、大家庭共居，鄰近松山車站（捷運綠線松山・藍線後山埤）。聚空間提供多種房型與安心的共居生活。",
+      "title": "台北松山共居公寓｜學生・上班族租屋住宿｜聚空間松山館",
+      "metaDesc": "聚空間松山館位於台北松山生活圈，鄰近松山車站與捷運松山站，提供多人房與百坪共享空間，適合學生、上班族及喜歡室友交流的住客。查看房型、租金、交通與入住資訊。",
       "ogImage": "/assets/images/songshan-hero.jpg",
-      "jsonld": {
-        "@type": "LodgingBusiness",
-        "name": "聚空間 松山館",
-        "description": "百坪大宅 × 大家庭共居 × 兩隻狗狗陪伴的家，鄰近松山車站（捷運綠線松山・藍線後山埤）。",
-        "areaServed": "台北市 松山車站週邊（捷運綠線松山・藍線後山埤）",
-        "url": "https://themeetingplace.pages.dev/locations/songshan/",
-        "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
-      }
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "聚空間 松山館",
+          "description": "百坪共享空間 × 大家庭共居 × 狗狗陪伴，鄰近松山車站（捷運綠線松山・藍線後山埤）。",
+          "areaServed": "台北市 松山車站週邊（捷運綠線松山・藍線後山埤）",
+          "url": "https://themeetingplace.pages.dev/locations/songshan/",
+          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "松山館最短可以住多久？", "acceptedAnswer": { "@type": "Answer", "text": "最短租期30天起，歡迎先提供預計入住日期與期間詢問。" } },
+            { "@type": "Question", "name": "外籍學生可以入住嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以。聚空間長期接待來台就學、交換與學習中文的外籍住客，可依入住期間協助確認房型。" } },
+            { "@type": "Question", "name": "男女會住在同一個房間嗎？", "acceptedAnswer": { "@type": "Answer", "text": "房間依性別安排，公共空間則由館內住客共同使用。" } },
+            { "@type": "Question", "name": "松山館可以開伙嗎？", "acceptedAnswer": { "@type": "Answer", "text": "可以，館內設有共用廚房與基本料理設備，實際使用方式依館內生活規範。" } },
+            { "@type": "Question", "name": "松山館有養狗嗎？", "acceptedAnswer": { "@type": "Answer", "text": "有。松山館的狗狗也是共居生活的一部分，如果你喜歡動物，這會是這一館很特別的日常；若對狗狗過敏或害怕，也建議入住前先告訴我們。" } },
+            { "@type": "Question", "name": "怎麼知道現在有沒有空床？", "acceptedAnswer": { "@type": "Answer", "text": "點擊「詢問目前空床」，提供預計入住日期、住宿期間、性別與人數，我們會協助確認目前適合的房型。" } }
+          ]
+        }
+      ]
     },
     {
       "key": "location-xinyi",

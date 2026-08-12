@@ -692,6 +692,37 @@
   .pm-step-item h4 { font-size: 15px; margin-bottom: 8px; color: var(--ink); }
   .pm-step-item p { font-size: 13px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
 
+  /* location detail page: hero */
+  .loc-hero-overlay { position: absolute; inset: 0; background: rgba(20,16,14,.52); display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; }
+  .loc-hero-inner { max-width: 680px; }
+  .loc-hero-inner .eyebrow { color: #fff; opacity: .92; }
+  .loc-hero-inner h1 { color: #fff; font-size: clamp(24px, 3.2vw, 36px); margin-bottom: 14px; }
+  .loc-hero-feature { color: #fff; font-weight: 700; font-size: 15.5px; margin: 0 0 10px; }
+  .loc-hero-meta { color: #fff; opacity: .92; font-size: 13.5px; margin: 0 0 6px; }
+  .loc-hero-inner .btn-pill { margin-top: 16px; display: inline-block; }
+
+  /* location detail page: fit checklist */
+  .loc-fit-list { list-style: none; padding: 0; margin: 28px 0 0; text-align: left; display: inline-block; }
+  .loc-fit-list li { font-size: 14.5px; color: var(--ink); line-height: 1.9; padding-left: 26px; position: relative; margin-bottom: 10px; }
+  .loc-fit-list li::before { content: "✓"; position: absolute; left: 0; color: var(--tenant); font-weight: 700; }
+  .loc-fit-alt { max-width: 600px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-faint); font-style: italic; line-height: 1.8; }
+
+  /* location detail page: amenities included (shared across all 6 buildings) */
+  .pm-amenity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 20px; margin-top: 36px; }
+  .pm-amenity-item { text-align: center; }
+  .pm-amenity-item img { width: 64px; height: 64px; object-fit: contain; margin: 0 auto 14px; display: block; }
+  .pm-amenity-item h4 { font-size: 15px; margin-bottom: 8px; color: var(--ink); }
+  .pm-amenity-item p { font-size: 12.5px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
+  @media (max-width: 900px) { .pm-amenity-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .pm-amenity-grid { grid-template-columns: 1fr; } }
+
+  /* location detail page: FAQ */
+  .loc-faq-list { margin-top: 32px; display: flex; flex-direction: column; gap: 22px; }
+  .loc-faq-item { border-bottom: 1px solid var(--line); padding-bottom: 22px; }
+  .loc-faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .loc-faq-item h4 { font-size: 15.5px; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
+  .loc-faq-item p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.85; margin: 0; }
+
   .pm-checkbox-group { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 6px; }
   .pm-checkbox-item { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ink-soft); white-space: nowrap; flex: 0 0 auto; }
   .pm-checkbox-item input[type="checkbox"] { width: 15px; height: 15px; padding: 0; flex: 0 0 auto; accent-color: var(--landlord); }
