@@ -1,6 +1,6 @@
-    <section class="v2-section" style="max-width:680px; text-align:center; padding-bottom:56px;">
-      <span class="section-tag">線上諮詢表單</span>
-      <p class="prose" style="font-size:14.5px; color:var(--ink-soft); line-height:1.9;">填寫以下資訊，讓我們了解您的房屋狀況，我們將盡快與您聯繫。</p>
+    <section class="v2-section" id="landlord-form" style="max-width:680px; text-align:center; padding-bottom:56px;">
+      <span class="section-tag">先讓我們了解你的房子</span>
+      <p class="prose" style="font-size:14.5px; color:var(--ink-soft); line-height:1.9;">不用先決定要不要委託。<br>先告訴我們房屋位置、房型與目前遇到的問題，我們會依照實際狀況提供初步建議。</p>
       <div class="landlord-form-wrap">
         <form class="landlord-form" id="landlord-lead-form">
           <div class="landlord-form-row">
@@ -9,32 +9,37 @@
           </div>
           <div class="landlord-form-row">
             <div class="landlord-form-field"><label for="ll-email">Email</label><input type="email" id="ll-email" name="email"></div>
-            <div class="landlord-form-field"><label for="ll-acreage">房屋坪數</label><input type="number" id="ll-acreage" name="acreage" min="0" step="0.1"></div>
+            <div class="landlord-form-field"><label for="ll-area">房屋區域</label><input type="text" id="ll-area" name="area" placeholder="例如：台北市大安區"></div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field full"><label for="ll-address">房屋地址</label><input type="text" id="ll-address" name="address" placeholder="台北市..."></div>
+            <div class="landlord-form-field"><label for="ll-type">房型</label><input type="text" id="ll-type" name="room_type" placeholder="例如：整層、分租雅房"></div>
+            <div class="landlord-form-field"><label for="ll-acreage">坪數</label><input type="number" id="ll-acreage" name="acreage" min="0" step="0.1"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-message">房屋目前狀況</label><textarea id="ll-message" name="message" placeholder="例如：房屋現況、目前遇到的問題…"></textarea></div>
           </div>
           <div class="landlord-form-row">
             <div class="landlord-form-field full">
-              <label for="ll-type">想諮詢的服務</label>
-              <select id="ll-type" name="service_type">
-                <option value="">請選擇</option>
-                <option value="whole">整層出租</option>
-                <option value="split">分租</option>
-                <option value="cohousing">共居規劃</option>
-                <option value="renovation">修繕整理</option>
-                <option value="unsure">尚未決定，想先了解</option>
-              </select>
+              <label>希望的服務</label>
+              <div class="pm-checkbox-group">
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="lease-management">代租代管</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="master-lease">包租合作</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="assessment">房屋出租評估</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="cleanup">空間整理／修繕</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="renovation">老屋翻修</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="unsure">尚未確定，希望先聊聊</label>
+              </div>
             </div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field full"><label for="ll-message">留言 / 房屋現況說明</label><textarea id="ll-message" name="message" placeholder="例如：房屋現況、可委託時間、其他需求…"></textarea></div>
+            <div class="landlord-form-field"><label for="ll-timing">預計出租時間</label><input type="text" id="ll-timing" name="timing" placeholder="例如：一個月內"></div>
+            <div class="landlord-form-field"><label for="ll-line">LINE ID（選填）</label><input type="text" id="ll-line" name="line_id"></div>
           </div>
           <p class="landlord-form-note">送出即表示同意由聚空間與您聯繫，資料僅用於本次諮詢。</p>
-          <button type="submit" class="landlord-form-submit">送出諮詢</button>
+          <button type="submit" class="landlord-form-submit">送出房屋資料</button>
         </form>
         <div class="landlord-form-success" id="landlord-form-success">
-          <p style="font-size:17px; font-weight:700; color:var(--ink); margin-bottom:10px;">感謝您的諮詢</p>
+          <p style="font-size:17px; font-weight:700; color:var(--ink); margin-bottom:10px;">感謝您的資料</p>
           <p style="font-size:14px; color:var(--ink-soft); line-height:1.8;">我們已收到您的資料，將盡快與您聯繫。<br>若急需聯繫，也歡迎直接來電 02-77527679。</p>
         </div>
       </div>
