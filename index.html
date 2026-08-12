@@ -735,6 +735,13 @@
   .loc-faq-item h4 { font-size: 15.5px; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
   .loc-faq-item p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.85; margin: 0; }
 
+  .v2-stats-band { background: var(--accent-soft); padding: 48px 24px; }
+  .v2-stats-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px 56px; text-align: center; }
+  .v2-stats-item { display: flex; flex-direction: column; align-items: center; }
+  .v2-stats-num { font-size: clamp(26px, 3.6vw, 38px); font-weight: 700; color: var(--accent-ink); font-family: var(--font-brand); }
+  .v2-stats-label { font-size: 13px; color: var(--ink-soft); margin-top: 6px; letter-spacing: .04em; }
+  .v2-stats-note { text-align: center; font-size: 11.5px; color: var(--ink-faint); margin-top: 20px; }
+
   .pm-checkbox-group { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 6px; }
   .pm-checkbox-item { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ink-soft); white-space: nowrap; flex: 0 0 auto; }
   .pm-checkbox-item input[type="checkbox"] { width: 15px; height: 15px; padding: 0; flex: 0 0 auto; accent-color: var(--landlord); }
@@ -1026,6 +1033,16 @@
       </div>
     </section>
 
+    <section class="v2-stats-band">
+      <div class="v2-stats-inner">
+        <div class="v2-stats-item"><span class="v2-stats-num">10 年</span><span class="v2-stats-label">實務經驗</span></div>
+        <div class="v2-stats-item"><span class="v2-stats-num">6 個</span><span class="v2-stats-label">共居據點</span></div>
+        <div class="v2-stats-item"><span class="v2-stats-num">100+</span><span class="v2-stats-label">床位</span></div>
+        <div class="v2-stats-item"><span class="v2-stats-num">XXX+</span><span class="v2-stats-label">位住客</span></div>
+      </div>
+      <p class="v2-stats-note">＊實際住客人數統計中，數字確認後補上。</p>
+    </section>
+
     <section class="section-tint">
       <div class="section-title-block">
         <p class="section-kicker">在台北，找到適合你的共居生活</p>
@@ -1112,22 +1129,6 @@
       <div style="text-align:center; margin-top:28px;">
         <a class="btn-pill accent" href="/coliving/">探索所有共居據點</a>
       </div>
-    </section>
-
-    <section class="section-tint">
-      <div class="section-title-block">
-        <p class="section-kicker">住過的人，怎麼說</p>
-        <p class="section-sub">真正的居住感受，來自每天生活在這裡的人。</p>
-      </div>
-      <div class="testimonial-cards">
-        <div class="testimonial-card">
-          <div class="testimonial-avatar">A</div>
-          <p class="testimonial-name">Arielle</p>
-          <p class="testimonial-meta">菲律賓・語言學生｜師大館</p>
-          <p class="testimonial-quote">「第一次來台北最擔心的是住宿和生活適應，入住後不只交通方便，遇到問題也有人協助，讓剛到台灣的生活安心很多。」</p>
-        </div>
-      </div>
-      <p class="section-note" style="text-align:center; margin-top:18px;">＊更多住客故事陸續整理中。</p>
     </section>
 
     <section class="v2-final-cta">
