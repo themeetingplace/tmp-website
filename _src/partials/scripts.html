@@ -79,3 +79,39 @@
     lazyEls.forEach(load);
   }
 })();
+(function () {
+  // 數字滾動效果：進入畫面時從 0 數到目標值（信任數字區塊）
+  var counters = document.querySelectorAll('.v2-stats-count[data-target]');
+  if (!counters.length) return;
+  function animate(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    if (isNaN(target)) return;
+    var duration = 1200;
+    var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target);
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    var countIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          countIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function (el) { countIo.observe(el); });
+  } else {
+    counters.forEach(function (el) { el.textContent = el.getAttribute('data-target'); });
+  }
+})();
