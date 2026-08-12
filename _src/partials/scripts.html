@@ -80,36 +80,41 @@
   }
 })();
 (function () {
-  // 數字滾動效果：進入畫面時從 0 數到目標值（信任數字區塊）
-  var counters = document.querySelectorAll('.v2-stats-count[data-target]');
-  if (!counters.length) return;
-  function animate(el) {
+  // 數字滾動效果：進入畫面時像老虎機一樣快速轉動每一位數字，最後統一同時停在正確數字（信任數字區塊）
+  var digits = document.querySelectorAll('.v2-stats-digit[data-target]');
+  if (!digits.length) return;
+
+  function animateDigit(el) {
     var target = parseInt(el.getAttribute('data-target'), 10);
     if (isNaN(target)) return;
-    var duration = 2800;
+    var duration = 2400;
     var startTime = null;
     function step(ts) {
       if (!startTime) startTime = ts;
-      var progress = Math.min((ts - startTime) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 2);
-      el.textContent = Math.round(eased * target);
+      var elapsed = ts - startTime;
+      var progress = Math.min(elapsed / duration, 1);
       if (progress < 1) {
+        var speed = 40 + progress * progress * 220;
+        el.textContent = Math.floor(elapsed / speed) % 10;
         requestAnimationFrame(step);
+      } else {
+        el.textContent = target;
       }
     }
     requestAnimationFrame(step);
   }
+
   if ('IntersectionObserver' in window) {
-    var countIo = new IntersectionObserver(function (entries) {
+    var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          animate(entry.target);
-          countIo.unobserve(entry.target);
+          animateDigit(entry.target);
+          io.unobserve(entry.target);
         }
       });
     }, { threshold: 0.4 });
-    counters.forEach(function (el) { countIo.observe(el); });
+    digits.forEach(function (el) { io.observe(el); });
   } else {
-    counters.forEach(function (el) { el.textContent = el.getAttribute('data-target'); });
+    digits.forEach(function (el) { el.textContent = el.getAttribute('data-target'); });
   }
 })();
