@@ -185,7 +185,7 @@
   .value-char { width: 52px; height: 52px; margin: 0 auto 16px; border-radius: 50%; background: var(--accent-soft); color: var(--accent-ink); font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center; font-family: var(--font-brand); }
   .value-icon { width: 64px; height: 64px; object-fit: contain; margin: 0 auto 16px; display: block; }
   .value-card-item h4 { font-size: 19px; margin-bottom: 6px; color: var(--ink); }
-  .value-card-phrase { font-size: 13px; font-weight: 600; color: var(--accent-ink); margin: 0 0 16px; line-height: 1.5; white-space: nowrap; }
+  .value-card-item p.value-card-phrase { font-size: 13px; font-weight: 600; color: var(--accent-ink); margin: 0 0 16px; line-height: 1.5; white-space: nowrap; text-align: center; }
   .value-card-divider { width: 30px; height: 2px; background: var(--accent); margin: 0 auto 16px; }
   .value-card-item p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.85; text-align: justify; }
   @media (max-width: 1120px) {
