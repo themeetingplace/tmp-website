@@ -209,10 +209,8 @@
   .about-connect-caption p { font-size: 13px; color: var(--ink-soft); line-height: 1.8; }
   @media (max-width: 760px) {
     .about-connect-title { font-size: 19px; }
-    .about-connect-captions { position: static; display: flex; flex-direction: row; align-items: flex-start; justify-content: center; gap: 10px; min-height: 0; }
-    .about-connect-caption { position: static; transform: none; }
-    .about-connect-caption { width: auto; flex: 1 1 0; max-width: none; min-width: 0; }
-    .about-connect-caption h4 { font-size: 11.5px; padding: 5px 10px; white-space: normal; }
+    .about-connect-caption { width: 33%; }
+    .about-connect-caption h4 { font-size: 11.5px; padding: 5px 8px; white-space: normal; }
   }
 
   /* values */
@@ -477,7 +475,7 @@
     .ct-steps-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 16px; }
     .ct-step { width: auto; }
     .ct-step-icon { width: 70px; height: 63px; }
-    .ct-panel { grid-template-columns: 1fr; gap: 20px; }
+    .ct-panel, .ct-panel.landlord { grid-template-columns: 1fr; gap: 20px; }
     .v2-ct-illust { height: 220px; }
     .v2-ct-card { padding: 24px 22px; }
   }
@@ -842,8 +840,8 @@
   .v2-marquee-row { overflow: hidden; width: 100%; }
   .v2-marquee-track { display: flex; gap: 16px; width: max-content; }
   .v2-marquee-tile { flex: 0 0 auto; width: 240px; height: 170px; background-size: cover; background-position: center; border-radius: 12px; }
-  .v2-marquee-right .v2-marquee-track { animation: v2MarqueeRight 72s linear infinite; }
-  .v2-marquee-left .v2-marquee-track { animation: v2MarqueeLeft 72s linear infinite; }
+  .v2-marquee-right .v2-marquee-track { animation: v2MarqueeRight 130s linear infinite; }
+  .v2-marquee-left .v2-marquee-track { animation: v2MarqueeLeft 130s linear infinite; }
   @keyframes v2MarqueeRight { from { transform: translateX(-50%); } to { transform: translateX(0%); } }
   @keyframes v2MarqueeLeft { from { transform: translateX(0%); } to { transform: translateX(-50%); } }
   @media (max-width: 640px) { .v2-marquee-tile { width: 160px; height: 120px; } .v2-marquee-wrap { gap: 10px; } .v2-marquee-track { gap: 10px; } }
@@ -915,6 +913,6 @@
     .hero h1, .photo-hero h1, .detail-hero-overlay h1, .loc-hero-inner h1 { font-size: 30px; }
     section h2, .section-kicker, .v2-final-cta-title { font-size: 21px; }
   }
-  @media (max-width: 420px) {
+  @media (max-width: 640px) {
     .service-grid { grid-template-columns: 1fr; }
   }
