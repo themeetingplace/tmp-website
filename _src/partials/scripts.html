@@ -1,4 +1,14 @@
 (function () {
+  var nav = document.querySelector('.v3-nav');
+  if (nav) {
+    var toggleNavShadow = function () {
+      nav.classList.toggle('is-scrolled', window.scrollY > 10);
+    };
+    toggleNavShadow();
+    window.addEventListener('scroll', toggleNavShadow, { passive: true });
+  }
+})();
+(function () {
   var revealSelectors = [
     '.page > section',
     '.page > .v2-section',
