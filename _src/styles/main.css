@@ -625,7 +625,7 @@
   .asset-case-before2 { background-image: url("/assets/images/case-before2.jpg"); background-size: cover; background-position: center; }
   .asset-case-after2 { background-image: url("/assets/images/case-after2.jpg"); background-size: cover; background-position: center; }
   .map-xinyi, .map-shida, .map-guting, .map-zhongshan, .map-songshan { background-size: cover; background-position: center; font-size: 0; }
-  .section-tag { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; font-size: 14px; padding: 7px 20px; border-radius: 8px; margin-bottom: 22px; }
+  .section-tag { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; font-size: 24px; padding: 7px 20px; border-radius: 8px; margin-bottom: 22px; }
   .v2-section { max-width: 1080px; margin: 56px auto 0; padding: 0 24px; }
   .landlord-care-wrap { position: relative; background: #F7F0E4; padding: 48px 0 76px; margin-top: 56px; }
   .landlord-care-wrap::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 46px; background: var(--paper); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat; }
