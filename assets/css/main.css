@@ -741,6 +741,8 @@
   .v2-room-table { width: 100%; border-collapse: collapse; margin-top: 22px; font-size: 13.5px; }
   .v2-room-table th, .v2-room-table td { border: 1px solid var(--line-strong); padding: 11px 16px; text-align: center; }
   .v2-room-table th { background: var(--paper-raised); font-weight: 700; }
+  .v2-room-table td a { color: var(--accent-ink); font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--accent-ink); }
+  .v2-room-table td a:hover { color: var(--accent); border-color: var(--accent); }
   .v2-carousel { position: relative; max-width: 1080px; margin: 24px auto 0; }
   .v2-carousel-track { position: relative; height: 460px; overflow: hidden; }
   .v2-carousel-slide { display: none; position: absolute; inset: 0; background-size: cover; background-position: center; }
