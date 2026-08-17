@@ -131,7 +131,7 @@
   .asset-map2-xinyi { background-image: url("/assets/images/map2-xinyi.jpg"); }
   .asset-map2-shida { background-image: url("/assets/images/map2-shida.jpg"); }
   .asset-map2-guting1 { background-image: url("/assets/images/map2-guting1.jpg"); }
-  .asset-map2-guting2 { background-image: url("/assets/images/map2-guting1.jpg"); }
+  .asset-map2-guting2 { background-image: url("/assets/images/map2-guting2.jpg"); }
   .asset-map2-zhongshan { background-image: url("/assets/images/map2-zhongshan.jpg"); }
   .nav-word { font-weight: 700; font-size: 16px; color: var(--ink); line-height: 1.2; }  .nav-word small { display: block; font-family: var(--font-mono); font-weight: 400; font-size: 9px; letter-spacing: 0.1em; color: var(--ink-faint); margin-top: 2px; }
   .nav-links { display: flex; gap: 26px; font-size: 13.5px; }
