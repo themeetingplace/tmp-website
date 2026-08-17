@@ -209,9 +209,9 @@
   .about-connect-caption p { font-size: 13px; color: var(--ink-soft); line-height: 1.8; }
   @media (max-width: 760px) {
     .about-connect-title { font-size: 19px; }
-    .about-connect-captions { position: static; display: flex; flex-direction: column; align-items: center; gap: 24px; min-height: 0; }
+    .about-connect-captions { position: static; display: flex; flex-direction: row; align-items: flex-start; justify-content: center; gap: 10px; min-height: 0; }
     .about-connect-caption { position: static; transform: none; }
-    .about-connect-caption { width: 100%; max-width: 320px; }
+    .about-connect-caption { width: auto; flex: 1 1 0; max-width: none; }
   }
 
   /* values */
@@ -685,7 +685,7 @@
   .loc-fit-alt { max-width: 720px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-faint); font-style: italic; line-height: 1.8; }
 
   /* location detail page: amenities included (shared across all 6 buildings) */
-  .pm-amenity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 20px; margin-top: 36px; }
+  .pm-amenity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; margin-top: 36px; }
   .pm-amenity-item { text-align: center; }
   .pm-amenity-item img { width: 80px; height: 80px; object-fit: contain; margin: 0 auto 14px; display: block; }
   .pm-amenity-item h4 { font-size: 22px; margin-bottom: 8px; color: var(--ink); }
