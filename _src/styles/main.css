@@ -332,7 +332,6 @@
   .btn-pill.outline.tenant { color: var(--tenant); }
   .btn-pill.outline.landlord { color: var(--landlord); }
   .btn-pill.outline.accent { color: var(--accent-ink); }
-  .btn-pill.outline.light { color: #fff; border-color: rgba(255,255,255,.55); }
 
   .section-tint { background: #F7F0E4; }
   .section-title-block { text-align: center; max-width: 760px; margin: 0 auto 8px; }
@@ -496,8 +495,6 @@
   .v3-nav-inner { max-width: none; margin: 0 auto; padding: 15px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .v3-nav-logo-img { height: 40px; width: auto; display: block; }
   .v3-nav-links { display: flex; gap: 36px; }
-  .v3-nav-ctas { display: flex; align-items: center; gap: 10px; margin-left: auto; }
-  .v3-nav-ctas .btn-pill { padding: 8px 20px; font-size: 13px; }
   .v3-nav-links > a, .v3-nav-item > a:first-child { font-size: 13.5px; color: var(--ink-faint); font-weight: 500; cursor: pointer; display: inline-block; text-decoration: none; }
   @keyframes navBounce { 0%, 100% { transform: translateY(0); } 30% { transform: translateY(-4px); } 55% { transform: translateY(0); } 75% { transform: translateY(-2px); } }
   .v3-nav-links > a:hover, .v3-nav-item > a:first-child:hover { animation: navBounce .5s ease; }
@@ -525,7 +522,6 @@
   body[data-page^="location-"] [data-nav="coliving"] { color: var(--ink); font-weight: 700; }
   @media (max-width: 760px) {
     .v3-nav-links { display: none; }
-    .v3-nav-ctas { display: none; }
     .v3-nav-burger { display: flex; }
     .v3-mobile-toggle:checked ~ .v3-mobile-panel { display: flex; }
   }
@@ -657,26 +653,6 @@
   .pm-split-illust { height: 320px; background-size: contain; background-repeat: no-repeat; background-position: center; }
   .pm-split-illust.worry { background-image: url("/assets/images/ill-landlord-worry-person.png"); }
   .pm-split-illust.pro { background-image: url("/assets/images/ill-landlord-pro.png"); }
-  .pm-split-layout h2 { text-wrap: wrap; }
-  .v2-story-illust { background-image: url("/assets/images/about-hero3.jpg"); background-size: cover; border-radius: 16px; }
-  .v2-story-body { font-size: 14.5px; color: var(--ink-soft); line-height: 1.9; margin: 16px 0 18px; }
-  .v2-story-tags { font-size: 14px; font-weight: 700; color: var(--accent-ink); letter-spacing: .04em; margin: 0 0 22px; }
-
-  .v2-landlord-dark { background: var(--ink); padding: 88px 24px; }
-  .v2-landlord-dark-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
-  .v2-landlord-dark-inner > * { min-width: 0; }
-  .v2-landlord-dark .eyebrow { color: var(--accent); }
-  .v2-landlord-dark h2 { color: #fff; font-size: clamp(24px, 3.2vw, 34px); line-height: 1.5; margin: 10px 0 20px; }
-  .v2-landlord-dark-lead { color: rgba(255,255,255,.75); font-size: 14.5px; margin: 0 0 16px; }
-  .v2-landlord-dark-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 24px; }
-  .v2-landlord-dark-tags span { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); color: #fff; font-size: 12.5px; padding: 7px 16px; border-radius: 999px; }
-  .v2-landlord-dark-body { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.8; margin: 0 0 28px; }
-  .v2-landlord-dark-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
-  .v2-landlord-dark-illust { height: 360px; }
-  @media (max-width: 900px) {
-    .v2-landlord-dark-inner { grid-template-columns: 1fr; }
-    .v2-landlord-dark-illust { order: -1; height: 260px; }
-  }
   @media (max-width: 900px) {
     .pm-split-layout { grid-template-columns: 1fr; }
     .pm-split-illust { display: none; }
