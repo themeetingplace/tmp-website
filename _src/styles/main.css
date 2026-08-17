@@ -835,10 +835,15 @@
   .landlord-help-wrap { padding-top: 8px; }
   .landlord-worry-img, .landlord-help-img { width: 100%; max-width: 1000px; height: auto; display: block; margin: 24px auto 0; }
   .v2-scope-wrap { background: var(--accent-soft); background-image: repeating-linear-gradient(135deg, rgba(232,126,59,.08) 0 14px, transparent 14px 28px); padding: 48px 0 64px; margin-top: 0; }
-  .v2-auto-carousel { position: relative; aspect-ratio: 4 / 3; overflow: hidden; max-width: 900px; margin: 0 auto; }
-  .v2-auto-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; animation-name: autoCycle56; animation-duration: 168s; animation-timing-function: linear; animation-iteration-count: infinite; }
-  @keyframes autoCycle56 { 0% { opacity: 0; } 0.18% { opacity: 1; } 1.61% { opacity: 1; } 1.79% { opacity: 0; } 100% { opacity: 0; } }
-  @media (max-width: 640px) { .v2-auto-carousel { height: 240px; } }
+  .v2-marquee-wrap { display: flex; flex-direction: column; gap: 16px; overflow: hidden; }
+  .v2-marquee-row { overflow: hidden; width: 100%; }
+  .v2-marquee-track { display: flex; gap: 16px; width: max-content; }
+  .v2-marquee-tile { flex: 0 0 auto; width: 240px; height: 170px; background-size: cover; background-position: center; border-radius: 12px; }
+  .v2-marquee-right .v2-marquee-track { animation: v2MarqueeRight 70s linear infinite; }
+  .v2-marquee-left .v2-marquee-track { animation: v2MarqueeLeft 70s linear infinite; }
+  @keyframes v2MarqueeRight { from { transform: translateX(-50%); } to { transform: translateX(0%); } }
+  @keyframes v2MarqueeLeft { from { transform: translateX(0%); } to { transform: translateX(-50%); } }
+  @media (max-width: 640px) { .v2-marquee-tile { width: 160px; height: 120px; } .v2-marquee-wrap { gap: 10px; } .v2-marquee-track { gap: 10px; } }
   .v2-scope-inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 260px; gap: 30px; align-items: start; }
   .v2-scope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 22px; }
   .v2-scope-card { background: #fff; border: 1.5px solid var(--accent); border-radius: 10px; padding: 26px 18px 18px; position: relative; }
