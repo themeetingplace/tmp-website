@@ -663,9 +663,9 @@
   .v2-case-caption p { font-size: 17px; color: var(--ink-soft); line-height: 1.85; margin: 0; }
   .v2-case-caption p b { color: var(--ink); font-weight: 700; }
 
-  .pm-step-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px; margin: 36px auto 0; }
+  .pm-step-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1360px; margin: 36px auto 0; }
   @media (max-width: 640px) { .pm-step-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; } .pm-step-grid .pm-step-item { width: auto; } }
-  .pm-step-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 26px 22px; flex: 0 1 270px; text-align: center; }
+  .pm-step-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 26px 22px; flex: 0 1 310px; text-align: center; }
   .pm-step-item h4 { font-size: 22px; margin-bottom: 8px; color: var(--ink); }
   .pm-step-item p { font-size: 17px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
 
