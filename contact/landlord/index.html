@@ -116,15 +116,46 @@
             <div class="landlord-form-field"><label for="ll-email">Email</label><input type="email" id="ll-email" name="email"></div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field"><label for="ll-area">房屋所在地區 *</label><input type="text" id="ll-area" name="area" placeholder="例如：台北市大安區" required></div>
+            <div class="landlord-form-field"><label for="ll-city">房屋所在縣市 *</label>
+              <select id="ll-city" name="city" required>
+                <option value="" disabled selected>請選擇縣市</option>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>基隆市</option>
+                <option>桃園市</option>
+                <option>新竹市</option>
+                <option>新竹縣</option>
+                <option>苗栗縣</option>
+                <option>台中市</option>
+                <option>彰化縣</option>
+                <option>南投縣</option>
+                <option>雲林縣</option>
+                <option>嘉義市</option>
+                <option>嘉義縣</option>
+                <option>台南市</option>
+                <option>高雄市</option>
+                <option>屏東縣</option>
+                <option>宜蘭縣</option>
+                <option>花蓮縣</option>
+                <option>台東縣</option>
+                <option>澎湖縣</option>
+                <option>金門縣</option>
+                <option>連江縣</option>
+              </select>
+            </div>
+            <div class="landlord-form-field"><label for="ll-district">房屋所在地區 *</label>
+              <select id="ll-district" name="district" required disabled>
+                <option value="" disabled selected>請先選擇縣市</option>
+              </select>
+            </div>
+          </div>
+          <div class="landlord-form-row">
             <div class="landlord-form-field"><label for="ll-type">房屋類型</label><input type="text" id="ll-type" name="property_type" placeholder="例如：公寓、電梯大樓、透天"></div>
-          </div>
-          <div class="landlord-form-row">
             <div class="landlord-form-field"><label for="ll-acreage">房屋坪數</label><input type="number" id="ll-acreage" name="acreage" min="0" step="0.1"></div>
-            <div class="landlord-form-field"><label for="ll-rooms">房間數</label><input type="number" id="ll-rooms" name="room_count" min="0" step="1"></div>
           </div>
           <div class="landlord-form-row">
-            <div class="landlord-form-field full"><label for="ll-timing">預計出租時間</label><input type="text" id="ll-timing" name="timing" placeholder="例如：一個月內"></div>
+            <div class="landlord-form-field"><label for="ll-rooms">房間數</label><input type="number" id="ll-rooms" name="room_count" min="0" step="1"></div>
+            <div class="landlord-form-field"><label for="ll-timing">預計出租時間</label><input type="text" id="ll-timing" name="timing" placeholder="例如：一個月內"></div>
           </div>
           <div class="landlord-form-row">
             <div class="landlord-form-field full">
@@ -210,6 +241,6 @@
 
 <button type="button" class="back-to-top" id="back-to-top" aria-label="回到頁面頂端">↑</button>
 
-<script src="/assets/js/main.js?v=7cbdc0595d" defer></script>
+<script src="/assets/js/main.js?v=1b4cdc100c" defer></script>
 </body>
 </html>
