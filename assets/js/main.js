@@ -9,6 +9,62 @@
   }
 })();
 (function () {
+  var selector = '.pm-step-item p, .pm-service-item p, .pm-amenity-item p, .loc-faq-item p, .banner-title, .banner-mood, .banner-rooms, .loc-fit-alt, .v2-final-cta-lines p, .section-sub';
+  var els = Array.prototype.slice.call(document.querySelectorAll(selector));
+  if (!els.length) return;
+  var canvas = document.createElement('canvas');
+  var ctx = canvas.getContext('2d');
+  var breakChars = '、，。！？；：,.!?;: ';
+
+  function fixOrphan(el) {
+    if (el.children.length) return;
+    if (el.dataset.origText === undefined) { el.dataset.origText = el.textContent; }
+    var text = el.dataset.origText.trim();
+    if (text.length < 6) return;
+    var cs = getComputedStyle(el);
+    ctx.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+    var containerWidth = el.clientWidth;
+    if (!containerWidth || ctx.measureText(text).width <= containerWidth) {
+      el.textContent = text;
+      return;
+    }
+
+    var candidates = [];
+    for (var i = 1; i < text.length - 1; i++) {
+      if (breakChars.indexOf(text[i]) !== -1) candidates.push(i + 1);
+    }
+    var best = null, bestScore = Infinity;
+    candidates.forEach(function (pos) {
+      var line1 = text.slice(0, pos).trim();
+      var line2 = text.slice(pos).trim();
+      if (!line1 || !line2) return;
+      var w1 = ctx.measureText(line1).width;
+      var w2 = ctx.measureText(line2).width;
+      if (w1 > containerWidth || w2 > containerWidth) return;
+      if (w2 < containerWidth * 0.24) return;
+      var score = Math.abs(w1 - w2);
+      if (score < bestScore) { bestScore = score; best = pos; }
+    });
+
+    if (best === null) {
+      el.textContent = text;
+      return;
+    }
+    el.textContent = '';
+    el.appendChild(document.createTextNode(text.slice(0, best).trim()));
+    el.appendChild(document.createElement('br'));
+    el.appendChild(document.createTextNode(text.slice(best).trim()));
+  }
+
+  function run() { els.forEach(fixOrphan); }
+  run();
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(run, 200);
+  });
+})();
+(function () {
   var revealSelectors = [
     '.page > section',
     '.page > .v2-section',
