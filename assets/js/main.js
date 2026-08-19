@@ -69,7 +69,6 @@
     '.page > section',
     '.page > .v2-section',
     '.page > .v2-highlight-wrap',
-    '.page > .v2-scope-wrap',
     '.banner-card',
     '.service-card',
     '.testimonial-photo',
