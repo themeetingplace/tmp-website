@@ -30,8 +30,13 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     targets.forEach(function (el) {
-      el.classList.add('reveal');
-      io.observe(el);
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('in-view');
+      } else {
+        el.classList.add('reveal');
+        io.observe(el);
+      }
     });
   } else {
     targets.forEach(function (el) { el.classList.add('in-view'); });
