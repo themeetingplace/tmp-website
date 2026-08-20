@@ -337,8 +337,8 @@
       "lang": "en",
       "peer": "/coliving/",
       "dataPage": "coliving",
-      "title": "Co-Living in Taipei｜The Meeting Place",
-      "metaDesc": "The Meeting Place operates six co-living locations across Taipei: Songshan, Xinyi, Shida, Zhongshan, Guting 1 and Guting 2. Find the one that fits your commute, studies and everyday life.",
+      "title": "Co-Living Apartments in Taipei | The Meeting Place",
+      "metaDesc": "Explore six co-living apartments across Taipei, from Shida and Guting to Zhongshan, Xinyi and Songshan. Find the right location based on your school, workplace, commute and preferred lifestyle.",
       "ogImage": "/assets/images/songshan-hero.jpg",
       "jsonld": null
     },
@@ -383,13 +383,13 @@
       "lang": "en",
       "peer": "/locations/guting1/",
       "dataPage": "location-guting1",
-      "title": "Guting Co-Living Taipei | Students, Professionals & Remote Workers | Guting Apartment 1",
-      "metaDesc": "Guting Apartment 1 is a newly renovated co-living apartment in Taipei with a spacious balcony and work-friendly shared spaces. Convenient for students, professionals and remote workers near Guting, NTNU and NTU.",
+      "title": "Guting Co-Living Taipei | Students, Professionals & Remote Workers | Guting 1 Apartment",
+      "metaDesc": "Guting 1 Apartment is a newly renovated co-living apartment in Taipei with a spacious balcony and work-friendly shared spaces. Convenient for students, professionals and remote workers near Guting, NTNU and NTU.",
       "ogImage": "/assets/images/guting1-hero.jpg",
       "jsonld": [
         {
           "@type": "LodgingBusiness",
-          "name": "The Meeting Place Guting Apartment 1",
+          "name": "The Meeting Place Guting 1 Apartment",
           "description": "Newly Renovated × Spacious Balcony × Work-Life Friendly, near Guting and Taipower Building MRT Stations.",
           "areaServed": "Taipei, near Guting and Taipower Building MRT Stations",
           "url": "https://themeetingplace.pages.dev/en/locations/guting1/",
@@ -398,9 +398,9 @@
         {
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "Is Guting Apartment 1 suitable for remote work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The apartment includes spaces suitable for working and using a laptop, along with a generally calmer living atmosphere." } },
+            { "@type": "Question", "name": "Is Guting 1 Apartment suitable for remote work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The apartment includes spaces suitable for working and using a laptop, along with a generally calmer living atmosphere." } },
             { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Actual availability depends on your move-in date and current room availability." } },
-            { "@type": "Question", "name": "Is Guting Apartment 1 suitable for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Guting is conveniently located near NTNU, NTU and several other campuses, with easy access to transportation and everyday amenities." } },
+            { "@type": "Question", "name": "Is Guting 1 Apartment suitable for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Guting is conveniently located near NTNU, NTU and several other campuses, with easy access to transportation and everyday amenities." } },
             { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen with basic cooking equipment is available." } },
             { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender, while common areas are shared by all residents." } },
             { "@type": "Question", "name": "How can I check current availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents, and we'll help you check available rooms." } }
