@@ -667,7 +667,7 @@
   .pm-service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; }
   .pm-service-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 28px 24px; text-align: left; }
   .pm-service-item h3, .pm-service-item h4 { font-size: 22px; margin-bottom: 10px; color: var(--ink); }
-  .pm-service-item p { font-size: 17px; color: var(--ink-soft); line-height: 1.8; margin: 0; text-align: justify; }
+  .pm-service-item p { font-size: 17px; color: var(--ink-soft); line-height: 1.8; margin: 0; text-align: left; }
   @media (max-width: 900px) { .pm-service-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 640px) { .pm-service-grid { grid-template-columns: 1fr; } }
 
