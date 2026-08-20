@@ -47,6 +47,8 @@
       "contentFile": "pages/about.html",
       "outPath": "about/index.html",
       "url": "/about/",
+      "lang": "zh",
+      "peer": "/en/about/",
       "dataPage": "about",
       "title": "關於我們｜聚空間 THE MEETING PLACE",
       "metaDesc": "聚空間從 2016 年第一個共居空間開始，在台北經營共居住宅、房屋租賃、代租代管與老屋翻修，讓屋主放心託付，也讓住客安心生活。",
@@ -336,6 +338,19 @@
           "url": "https://themeetingplace.pages.dev/en/"
         }
       ]
+    },
+    {
+      "key": "about-en",
+      "contentFile": "pages/en/about.html",
+      "outPath": "en/about/index.html",
+      "url": "/en/about/",
+      "lang": "en",
+      "peer": "/about/",
+      "dataPage": "about",
+      "title": "About Us | The Meeting Place",
+      "metaDesc": "Since 2016, The Meeting Place has grown from a single co-living apartment in Taipei into rental management and space improvement, taking care of both properties and the people living in them.",
+      "ogImage": "/assets/images/songshan-lounge.jpg",
+      "jsonld": null
     },
     {
       "key": "coliving-en",
