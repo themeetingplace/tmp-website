@@ -336,7 +336,7 @@
   @media (max-width: 640px) {
     .ct-steps-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 16px; }
     .ct-step { width: auto; }
-    .ct-step-icon { width: 70px; height: 63px; }
+    .ct-step-icon { width: 110px; height: 99px; }
     .ct-panel, .ct-panel.landlord { grid-template-columns: 1fr; gap: 20px; }
     .v2-ct-illust { height: 220px; }
     .v2-ct-card { padding: 24px 22px; }
