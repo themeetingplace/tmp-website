@@ -488,8 +488,8 @@
   .v2-ct-card .btn-pill { display: inline-block; margin-top: 4px; }
   .ct-panel p.ct-card-note { font-size: 17px; color: var(--ink-faint); line-height: 1.8; margin-top: 18px; }
   .v2-ct-card p { text-align: center; font-size: 17px; line-height: 2.1; margin: 0; }
-  .ct-contact-methods { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 960px; margin: 32px auto 0; }
-  .ct-contact-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 26px 24px; flex: 0 1 280px; text-align: center; text-decoration: none; }
+  .ct-contact-methods { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 980px; margin: 32px auto 0; }
+  .ct-contact-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 26px 24px; flex: 0 1 300px; text-align: center; text-decoration: none; }
   .ct-contact-item .ct-contact-icon { width: 34px; height: 34px; margin: 0 auto 12px; display: block; }
   .ct-contact-item h4 { font-size: 17px; font-weight: 700; color: var(--ink); margin: 0 0 6px; }
   .ct-contact-item p { font-size: 14px; color: var(--ink-soft); margin: 0; line-height: 1.6; overflow-wrap: break-word; }
