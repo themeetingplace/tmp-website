@@ -8,6 +8,8 @@
       "contentFile": "pages/home.html",
       "outPath": "index.html",
       "url": "/",
+      "lang": "zh",
+      "peer": "/en/",
       "dataPage": "home",
       "title": "聚空間 THE MEETING PLACE｜台北共居公寓・代租代管・老屋翻修",
       "metaDesc": "聚空間提供台北共居公寓、房屋租賃、代租代管與老屋翻修服務，讓屋主安心託付，也讓住客安心居住。松山、信義、師大、古亭、中山六大共居據點。",
@@ -56,6 +58,8 @@
       "contentFile": "pages/coliving.html",
       "outPath": "coliving/index.html",
       "url": "/coliving/",
+      "lang": "zh",
+      "peer": "/en/coliving/",
       "dataPage": "coliving",
       "title": "共居據點｜聚空間 THE MEETING PLACE",
       "metaDesc": "聚空間在台北經營六大共居據點：松山、信義、師大、中山、古亭1館、古亭2館，依照你的通勤、就學與生活需求，找到最適合自己的共居空間。",
@@ -78,6 +82,8 @@
       "contentFile": "pages/contact-tenant.html",
       "outPath": "contact/tenant/index.html",
       "url": "/contact/tenant/",
+      "lang": "zh",
+      "peer": "/en/contact/tenant/",
       "dataPage": "contact-tenant",
       "title": "台北共居租屋｜詢問空床與入住需求｜聚空間",
       "metaDesc": "正在找台北共居公寓？告訴聚空間你的入住日期、住宿期間與生活需求，我們會協助確認目前空床，並推薦適合的台北共居館別與房型。",
@@ -162,6 +168,8 @@
       "contentFile": "pages/locations/shida.html",
       "outPath": "locations/shida/index.html",
       "url": "/locations/shida/",
+      "lang": "zh",
+      "peer": "/en/locations/shida/",
       "dataPage": "location-shida",
       "title": "台北師大學生住宿｜共居公寓・外籍學生租屋｜聚空間師大館",
       "metaDesc": "聚空間師大館位於台北師大生活圈，鄰近台灣師範大學與捷運台電大樓站，提供學生、華語生與外籍住客共居住宿。查看房型、租金、交通與入住資訊。",
@@ -193,6 +201,8 @@
       "contentFile": "pages/locations/guting1.html",
       "outPath": "locations/guting1/index.html",
       "url": "/locations/guting1/",
+      "lang": "zh",
+      "peer": "/en/locations/guting1/",
       "dataPage": "location-guting1",
       "title": "台北古亭共居公寓｜學生・上班族・遠距工作住宿｜聚空間古亭1館",
       "metaDesc": "聚空間古亭1館位於台北古亭生活圈，提供全新共居空間、寬敞陽台與適合生活工作的公共區域，適合學生、上班族及遠距工作者。查看房型、租金與入住資訊。",
@@ -280,6 +290,136 @@
           ]
         }
       ]
+    },
+    {
+      "key": "home-en",
+      "contentFile": "pages/en/home.html",
+      "outPath": "en/index.html",
+      "url": "/en/",
+      "lang": "en",
+      "peer": "/",
+      "dataPage": "home",
+      "title": "The Meeting Place｜Taipei Co-Living, Property Management & Renovation",
+      "metaDesc": "The Meeting Place offers Taipei co-living apartments, property leasing, full-service management and renovation, giving owners peace of mind and residents a true home.",
+      "ogImage": "/assets/images/songshan-lounge.jpg",
+      "jsonld": [
+        {
+          "@type": "Organization",
+          "name": "The Meeting Place",
+          "url": "https://themeetingplace.pages.dev/en/",
+          "logo": "https://themeetingplace.pages.dev/assets/images/logo-full-white.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 316, Kunming St",
+            "addressLocality": "Wanhua District",
+            "addressRegion": "Taipei City",
+            "addressCountry": "TW"
+          },
+          "telephone": "+886-2-77527679",
+          "email": "themeetingplacetaipei@gmail.com",
+          "sameAs": [
+            "https://lin.ee/ofPOifH",
+            "https://www.facebook.com/TheMeetingPlaceTaipei"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "The Meeting Place",
+          "url": "https://themeetingplace.pages.dev/en/"
+        }
+      ]
+    },
+    {
+      "key": "coliving-en",
+      "contentFile": "pages/en/coliving.html",
+      "outPath": "en/coliving/index.html",
+      "url": "/en/coliving/",
+      "lang": "en",
+      "peer": "/coliving/",
+      "dataPage": "coliving",
+      "title": "Co-Living in Taipei｜The Meeting Place",
+      "metaDesc": "The Meeting Place operates six co-living locations across Taipei: Songshan, Xinyi, Shida, Zhongshan, Guting 1 and Guting 2. Find the one that fits your commute, studies and everyday life.",
+      "ogImage": "/assets/images/songshan-hero.jpg",
+      "jsonld": null
+    },
+    {
+      "key": "location-shida-en",
+      "contentFile": "pages/en/locations/shida.html",
+      "outPath": "en/locations/shida/index.html",
+      "url": "/en/locations/shida/",
+      "lang": "en",
+      "peer": "/locations/shida/",
+      "dataPage": "location-shida",
+      "title": "Student Housing near NTNU Taipei | Shida Apartment | The Meeting Place",
+      "metaDesc": "Looking for student housing near NTNU in Taipei? Shida Apartment offers furnished co-living rooms for international students, Mandarin learners and exchange students, with convenient access to NTNU, MRT, dining and everyday essentials.",
+      "ogImage": "/assets/images/shida-hero.jpg",
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "The Meeting Place Shida Apartment",
+          "description": "NTNU Neighborhood × Everyday Taipei Life × Quiet & Convenient, near National Taiwan Normal University and Taipower Building MRT Station.",
+          "areaServed": "Taipei, near Taipower Building MRT Station",
+          "url": "https://themeetingplace.pages.dev/en/locations/shida/",
+          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is Shida Apartment suitable for Mandarin learners and international students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Shida Apartment is located near NTNU and the Mandarin-learning community, making it one of our most suitable locations for students and international residents." } },
+            { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Actual availability depends on your move-in date, room type and length of stay." } },
+            { "@type": "Question", "name": "Is it convenient to get from Shida Apartment to NTNU?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Shida Apartment is located in the Shida neighborhood, close to NTNU and Taipower Building MRT Station." } },
+            { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen with basic cooking equipment is available." } },
+            { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender. Common areas are shared by all residents." } },
+            { "@type": "Question", "name": "How can I check current availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents, and we'll help you check suitable rooms." } }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "location-guting1-en",
+      "contentFile": "pages/en/locations/guting1.html",
+      "outPath": "en/locations/guting1/index.html",
+      "url": "/en/locations/guting1/",
+      "lang": "en",
+      "peer": "/locations/guting1/",
+      "dataPage": "location-guting1",
+      "title": "Guting Co-Living Taipei | Students, Professionals & Remote Workers | Guting Apartment 1",
+      "metaDesc": "Guting Apartment 1 is a newly renovated co-living apartment in Taipei with a spacious balcony and work-friendly shared spaces. Convenient for students, professionals and remote workers near Guting, NTNU and NTU.",
+      "ogImage": "/assets/images/guting1-hero.jpg",
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "The Meeting Place Guting Apartment 1",
+          "description": "Newly Renovated × Spacious Balcony × Work-Life Friendly, near Guting and Taipower Building MRT Stations.",
+          "areaServed": "Taipei, near Guting and Taipower Building MRT Stations",
+          "url": "https://themeetingplace.pages.dev/en/locations/guting1/",
+          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is Guting Apartment 1 suitable for remote work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The apartment includes spaces suitable for working and using a laptop, along with a generally calmer living atmosphere." } },
+            { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Actual availability depends on your move-in date and current room availability." } },
+            { "@type": "Question", "name": "Is Guting Apartment 1 suitable for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Guting is conveniently located near NTNU, NTU and several other campuses, with easy access to transportation and everyday amenities." } },
+            { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen with basic cooking equipment is available." } },
+            { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender, while common areas are shared by all residents." } },
+            { "@type": "Question", "name": "How can I check current availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents, and we'll help you check available rooms." } }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "contact-tenant-en",
+      "contentFile": "pages/en/contact-tenant.html",
+      "outPath": "en/contact/tenant/index.html",
+      "url": "/en/contact/tenant/",
+      "lang": "en",
+      "peer": "/contact/tenant/",
+      "dataPage": "contact-tenant",
+      "title": "Taipei Co-Living｜Check Availability &amp; Move-In Requests｜The Meeting Place",
+      "metaDesc": "Looking for a co-living apartment in Taipei? Tell The Meeting Place your move-in date, length of stay and needs, and we'll help confirm availability and recommend the right location for you.",
+      "ogImage": "/assets/images/songshan-lounge.jpg",
+      "jsonld": null
     }
   ]
 }

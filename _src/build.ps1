@@ -22,6 +22,8 @@ $baseUrl = $manifest.baseUrl
 $layout = Read-Utf8 (Join-Path $srcDir "partials\layout.html")
 $header = Read-Utf8 (Join-Path $srcDir "partials\header.html")
 $footer = Read-Utf8 (Join-Path $srcDir "partials\footer.html")
+$headerEn = Read-Utf8 (Join-Path $srcDir "partials\header-en.html")
+$footerEn = Read-Utf8 (Join-Path $srcDir "partials\footer-en.html")
 $scripts = Read-Utf8 (Join-Path $srcDir "partials\scripts.html")
 $landlordForm = Read-Utf8 (Join-Path $srcDir "partials\landlord-form.html")
 $styles = Read-Utf8 (Join-Path $srcDir "styles\main.css")
@@ -66,10 +68,37 @@ foreach ($p in $manifest.pages) {
     $preloadBlock = "<link rel=`"preload`" as=`"image`" href=`"$($p.preloadImage)`">"
   }
 
+  # 語言：預設 zh，peer 是同一頁在另一語言下的網址（沒填就退回該語言首頁，讓語言切換鈕永遠有地方可去）
+  $lang = if ($p.lang) { $p.lang } else { "zh" }
+  $hasPeer = ($null -ne $p.peer -and $p.peer -ne "")
+  $peerUrl = if ($hasPeer) { $p.peer } else { if ($lang -eq "en") { "/" } else { "/en/" } }
+
+  $zhChar = [char]0x4E2D
+  $sepChar = [char]0xFF5C
+  if ($lang -eq "en") {
+    $langToggleHtml = "<a href=`"$peerUrl`">$zhChar</a><span class=`"v3-lang-sep`">$sepChar</span><span class=`"is-current`">EN</span>"
+    $headerTemplate = $headerEn
+    $footerTemplate = $footerEn
+  } else {
+    $langToggleHtml = "<span class=`"is-current`">$zhChar</span><span class=`"v3-lang-sep`">$sepChar</span><a href=`"$peerUrl`">EN</a>"
+    $headerTemplate = $header
+    $footerTemplate = $footer
+  }
+  $headerForPage = $headerTemplate.Replace("{{LANG_TOGGLE}}", $langToggleHtml)
+
+  $hreflangBlock = ""
+  if ($hasPeer) {
+    $selfHreflang = if ($lang -eq "en") { "en" } else { "zh-Hant" }
+    $peerHreflang = if ($lang -eq "en") { "zh-Hant" } else { "en" }
+    $peerAbsUrl = $baseUrl + $peerUrl
+    $hreflangBlock = "<link rel=`"alternate`" hreflang=`"$selfHreflang`" href=`"$canonical`">`n<link rel=`"alternate`" hreflang=`"$peerHreflang`" href=`"$peerAbsUrl`">"
+  }
+
   $page = $layout
   $page = $page.Replace("{{TITLE}}", $p.title)
   $page = $page.Replace("{{META_DESC}}", $p.metaDesc)
   $page = $page.Replace("{{CANONICAL}}", $canonical)
+  $page = $page.Replace("{{HREFLANG}}", $hreflangBlock)
   $page = $page.Replace("{{OG_TITLE}}", $p.title)
   $page = $page.Replace("{{OG_DESC}}", $p.metaDesc)
   $page = $page.Replace("{{OG_IMAGE}}", $ogImage)
@@ -78,9 +107,11 @@ foreach ($p in $manifest.pages) {
   $page = $page.Replace("{{CSS_VER}}", $cssVer)
   $page = $page.Replace("{{JS_VER}}", $jsVer)
   $page = $page.Replace("{{DATA_PAGE}}", $p.dataPage)
-  $page = $page.Replace("{{HEADER}}", $header)
+  $page = $page.Replace("{{LANG}}", $lang)
+  $page = $page.Replace("{{PEER_URL}}", $peerUrl)
+  $page = $page.Replace("{{HEADER}}", $headerForPage)
   $page = $page.Replace("{{CONTENT}}", $content)
-  $page = $page.Replace("{{FOOTER}}", $footer)
+  $page = $page.Replace("{{FOOTER}}", $footerTemplate)
 
   $outPath = Join-Path $deployDir $p.outPath
   Write-Utf8 $outPath $page

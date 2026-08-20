@@ -1,4 +1,36 @@
 (function () {
+  var body = document.body;
+  var pageLang = body.getAttribute('data-lang');
+  var peerUrl = body.getAttribute('data-peer-url');
+  if (!pageLang || !peerUrl) return;
+  if (localStorage.getItem('tmp-lang-suggest-dismissed') === '1') return;
+
+  var browserLang = (navigator.language || '').toLowerCase();
+  var prefersEn = browserLang.indexOf('en') === 0;
+  var prefersZh = browserLang.indexOf('zh') === 0;
+
+  var shouldSuggest = (pageLang === 'zh' && prefersEn) || (pageLang === 'en' && prefersZh);
+  if (!shouldSuggest) return;
+
+  var text = pageLang === 'zh' ? 'View this website in English?' : '使用中文瀏覽這個網站？';
+  var actionText = pageLang === 'zh' ? 'View in English' : '切換成中文';
+
+  var bar = document.createElement('div');
+  bar.className = 'lang-suggest-bar';
+  bar.innerHTML = '<span>' + text + '</span>' +
+    '<a href="' + peerUrl + '" class="lang-suggest-go">' + actionText + '</a>' +
+    '<button type="button" class="lang-suggest-close" aria-label="Dismiss">×</button>';
+  document.body.insertBefore(bar, document.body.firstChild);
+
+  bar.querySelector('.lang-suggest-close').addEventListener('click', function () {
+    localStorage.setItem('tmp-lang-suggest-dismissed', '1');
+    bar.remove();
+  });
+  bar.querySelector('.lang-suggest-go').addEventListener('click', function () {
+    localStorage.setItem('tmp-lang-suggest-dismissed', '1');
+  });
+})();
+(function () {
   var nav = document.querySelector('.v3-nav');
   if (nav) {
     var toggleNavShadow = function () {

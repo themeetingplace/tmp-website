@@ -488,10 +488,21 @@
   .v2-ct-card .btn-pill { display: inline-block; margin-top: 4px; }
   .ct-panel p.ct-card-note { font-size: 17px; color: var(--ink-faint); line-height: 1.8; margin-top: 18px; }
   .v2-ct-card p { text-align: center; font-size: 17px; line-height: 2.1; margin: 0; }
+  .ct-contact-methods { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 960px; margin: 32px auto 0; }
+  .ct-contact-item { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 26px 24px; flex: 0 1 280px; text-align: center; text-decoration: none; }
+  .ct-contact-item .ct-contact-icon { width: 34px; height: 34px; margin: 0 auto 12px; display: block; }
+  .ct-contact-item h4 { font-size: 17px; font-weight: 700; color: var(--ink); margin: 0 0 6px; }
+  .ct-contact-item p { font-size: 14px; color: var(--ink-soft); margin: 0; line-height: 1.6; overflow-wrap: break-word; }
+  .ct-contact-item:hover { border-color: var(--accent); }
+  .ct-contact-note { max-width: 640px; margin: 24px auto 0; text-align: center; font-size: 14px; color: var(--ink-faint); line-height: 1.8; }
   .asset-landlord-help-person { background-image: url("/assets/images/ill-landlord-pro.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
   .v2-process-row { max-width: 1320px; margin: 40px auto 0; padding: 0 24px; }
   .v3-nav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; transition: box-shadow .2s ease; }
   .v3-nav.is-scrolled { box-shadow: 0 8px 24px -16px rgba(0,0,0,.18); }
+  .lang-suggest-bar { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; background: var(--ink); color: #fff; font-size: 13.5px; padding: 10px 44px 10px 16px; position: relative; text-align: center; }
+  .lang-suggest-go { color: #fff; font-weight: 700; text-decoration: underline; }
+  .lang-suggest-close { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #fff; font-size: 18px; line-height: 1; cursor: pointer; padding: 4px 8px; opacity: .7; }
+  .lang-suggest-close:hover { opacity: 1; }
   .v3-nav-inner { max-width: none; margin: 0 auto; padding: 15px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .v3-nav-logo-img { height: 40px; width: auto; display: block; }
   .v3-nav-links { display: flex; gap: 36px; }
@@ -511,6 +522,19 @@
   .v3-mobile-panel > a { display: block; padding: 12px 0; font-size: 14.5px; color: var(--ink-soft); font-weight: 500; border-bottom: 1px solid var(--line); cursor: pointer; text-decoration: none; }
   .v3-mobile-sub { display: flex; flex-direction: column; padding: 2px 0 8px 14px; border-bottom: 1px solid var(--line); }
   .v3-mobile-sub a { font-size: 13px; color: var(--ink-faint); padding: 7px 0; cursor: pointer; display: block; text-decoration: none; }
+  .v3-lang-toggle { display: flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 700; color: var(--ink-faint); }
+  .v3-lang-toggle a { color: var(--ink-faint); text-decoration: none; }
+  .v3-lang-toggle a:hover { color: var(--accent-ink); }
+  .v3-lang-toggle .is-current { color: var(--ink); }
+  .v3-lang-toggle .v3-lang-sep { color: var(--line-strong); }
+  .v3-mobile-lang { display: none; }
+  @media (max-width: 760px) {
+    .v3-lang-toggle { display: none; }
+    .v3-mobile-lang { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--ink-faint); padding: 14px 0 4px; }
+    .v3-mobile-lang a { color: var(--ink-faint); text-decoration: none; }
+    .v3-mobile-lang .is-current { color: var(--ink); }
+    .v3-mobile-lang .v3-lang-sep { color: var(--line-strong); }
+  }
 
   /* active nav state, driven by body[data-page] instead of per-page baked-in class="active" */
   body[data-page="home"] [data-nav="home"],
