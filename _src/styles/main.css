@@ -176,7 +176,9 @@
   .about-connect-caption p { font-size: 13px; color: var(--ink-soft); line-height: 1.8; }
   @media (max-width: 760px) {
     .about-connect-title { font-size: 19px; }
-    .about-connect-caption { width: 33%; }
+    .about-connect-caption { width: 28%; }
+    .about-connect-caption.left { left: 20%; }
+    .about-connect-caption.right { left: 80%; }
     .about-connect-caption h3, .about-connect-caption h4 { font-size: 11.5px; padding: 5px 8px; white-space: normal; }
   }
 
