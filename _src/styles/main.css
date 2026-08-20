@@ -184,7 +184,7 @@
   .value-card-item { text-align: center; padding: 32px 16px; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; }
   .value-char { width: 52px; height: 52px; margin: 0 auto 16px; border-radius: 50%; background: var(--accent-soft); color: var(--accent-ink); font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center; font-family: var(--font-brand); }
   .value-icon { width: 64px; height: 64px; object-fit: contain; margin: 0 auto 16px; display: block; }
-  .value-card-item h4 { font-size: 22px; margin-bottom: 6px; color: var(--ink); }
+  .value-card-item h3, .value-card-item h4 { font-size: 22px; margin-bottom: 6px; color: var(--ink); }
   .value-card-item p.value-card-phrase { font-size: 13px; font-weight: 600; color: var(--accent-ink); margin: 0 0 16px; line-height: 1.5; white-space: nowrap; text-align: center; }
   .value-card-divider { width: 30px; height: 2px; background: var(--accent); margin: 0 auto 16px; }
   .value-card-item p { font-size: 17px; color: var(--ink-soft); line-height: 1.85; text-align: left; }
@@ -205,12 +205,12 @@
   .about-connect-caption.left { left: 10%; transform: translateX(-50%); }
   .about-connect-caption.right { left: 89.5%; transform: translateX(-50%); text-align: center; }
   .about-connect-caption.center { left: 50%; transform: translateX(-50%); }
-  .about-connect-caption h4 { display: inline-block; background: var(--accent); color: #fff; font-size: 13.5px; font-weight: 700; padding: 6px 22px; border-radius: 999px; margin-bottom: 10px; }
+  .about-connect-caption h3, .about-connect-caption h4 { display: inline-block; background: var(--accent); color: #fff; font-size: 13.5px; font-weight: 700; padding: 6px 22px; border-radius: 999px; margin-bottom: 10px; }
   .about-connect-caption p { font-size: 13px; color: var(--ink-soft); line-height: 1.8; }
   @media (max-width: 760px) {
     .about-connect-title { font-size: 19px; }
     .about-connect-caption { width: 33%; }
-    .about-connect-caption h4 { font-size: 11.5px; padding: 5px 8px; white-space: normal; }
+    .about-connect-caption h3, .about-connect-caption h4 { font-size: 11.5px; padding: 5px 8px; white-space: normal; }
   }
 
   /* values */
@@ -653,7 +653,7 @@
   .landlord-care-wrap::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 46px; background: var(--paper); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat; }
   .landlord-care-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 44px 28px; margin-top: 28px; }
   .landlord-care-item { text-align: center; }
-  .landlord-care-item h4 { font-size: 22px; font-weight: 700; color: var(--ink); margin: 0 0 16px; }
+  .landlord-care-item h3, .landlord-care-item h4 { font-size: 22px; font-weight: 700; color: var(--ink); margin: 0 0 16px; }
   .landlord-care-img { width: 100%; height: auto; display: block; margin-bottom: 16px; }
   .landlord-care-item p { font-size: 17px; color: var(--ink-soft); line-height: 1.8; margin: 0; }
   @media (max-width: 760px) {
@@ -682,7 +682,7 @@
   }
 
   .v2-case-caption { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); text-align: left; }
-  .v2-case-caption h4 { font-size: 22px; font-weight: 700; color: var(--ink); margin: 0 0 10px; }
+  .v2-case-caption h3, .v2-case-caption h4 { font-size: 22px; font-weight: 700; color: var(--ink); margin: 0 0 10px; }
   .v2-case-caption p { font-size: 17px; color: var(--ink-soft); line-height: 1.85; margin: 0; }
   .v2-case-caption p b { color: var(--ink); font-weight: 700; }
 
@@ -711,7 +711,7 @@
   .pm-amenity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; margin-top: 36px; }
   .pm-amenity-item { text-align: center; }
   .pm-amenity-item img { width: 110px; height: 110px; object-fit: contain; margin: 0 auto 14px; display: block; }
-  .pm-amenity-item h4 { font-size: 22px; margin-bottom: 8px; color: var(--ink); }
+  .pm-amenity-item h3, .pm-amenity-item h4 { font-size: 22px; margin-bottom: 8px; color: var(--ink); }
   .pm-amenity-item p { font-size: 17px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
   @media (max-width: 900px) { .pm-amenity-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 480px) { .pm-amenity-grid { grid-template-columns: 1fr; } }

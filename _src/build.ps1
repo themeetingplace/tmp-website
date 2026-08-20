@@ -26,6 +26,7 @@ $headerEn = Read-Utf8 (Join-Path $srcDir "partials\header-en.html")
 $footerEn = Read-Utf8 (Join-Path $srcDir "partials\footer-en.html")
 $scripts = Read-Utf8 (Join-Path $srcDir "partials\scripts.html")
 $landlordForm = Read-Utf8 (Join-Path $srcDir "partials\landlord-form.html")
+$landlordFormEn = Read-Utf8 (Join-Path $srcDir "partials\landlord-form-en.html")
 $styles = Read-Utf8 (Join-Path $srcDir "styles\main.css")
 
 # CSS/JS 改成外部可快取檔案（原本每頁都內嵌一份 main.css，同樣內容重複下載 12 次，
@@ -46,7 +47,6 @@ $sitemapEntries = @()
 
 foreach ($p in $manifest.pages) {
   $content = Read-Utf8 (Join-Path $srcDir $p.contentFile)
-  $content = $content.Replace("{{LANDLORD_FORM}}", $landlordForm)
 
   $canonical = $baseUrl + $p.url
   $ogImage = $baseUrl + $p.ogImage
@@ -73,6 +73,8 @@ foreach ($p in $manifest.pages) {
   $hasPeer = ($null -ne $p.peer -and $p.peer -ne "")
   $peerUrl = if ($hasPeer) { $p.peer } else { if ($lang -eq "en") { "/" } else { "/en/" } }
 
+  $htmlLang = if ($lang -eq "en") { "en" } else { "zh-Hant" }
+  $ogLocale = if ($lang -eq "en") { "en_US" } else { "zh_TW" }
   $zhChar = [char]0x4E2D
   $sepChar = [char]0xFF5C
   if ($lang -eq "en") {
@@ -85,6 +87,8 @@ foreach ($p in $manifest.pages) {
     $footerTemplate = $footer
   }
   $headerForPage = $headerTemplate.Replace("{{LANG_TOGGLE}}", $langToggleHtml)
+  $landlordFormForPage = if ($lang -eq "en") { $landlordFormEn } else { $landlordForm }
+  $content = $content.Replace("{{LANDLORD_FORM}}", $landlordFormForPage)
 
   $hreflangBlock = ""
   if ($hasPeer) {
@@ -108,6 +112,8 @@ foreach ($p in $manifest.pages) {
   $page = $page.Replace("{{JS_VER}}", $jsVer)
   $page = $page.Replace("{{DATA_PAGE}}", $p.dataPage)
   $page = $page.Replace("{{LANG}}", $lang)
+  $page = $page.Replace("{{HTML_LANG}}", $htmlLang)
+  $page = $page.Replace("{{OG_LOCALE}}", $ogLocale)
   $page = $page.Replace("{{PEER_URL}}", $peerUrl)
   $page = $page.Replace("{{HEADER}}", $headerForPage)
   $page = $page.Replace("{{CONTENT}}", $content)

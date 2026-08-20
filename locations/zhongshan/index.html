@@ -22,15 +22,27 @@
     "@context":  "https://schema.org",
     "@graph":  [
                    {
-                       "@type":  "LodgingBusiness",
-                       "name":  "聚空間 中山館",
-                       "description":  "行天宮生活圈 × 國際交流 × 個性工業風，鄰近捷運橘線行天宮站。",
-                       "areaServed":  "台北市 捷運橘線行天宮站週邊",
-                       "url":  "https://themeetingplace.pages.dev/locations/zhongshan/",
-                       "brand":  {
-                                     "@type":  "Organization",
-                                     "name":  "聚空間 THE MEETING PLACE"
-                                 }
+                       "@type":  "BreadcrumbList",
+                       "itemListElement":  [
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  1,
+                                                   "name":  "首頁",
+                                                   "item":  "https://themeetingplace.pages.dev/"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  2,
+                                                   "name":  "共居據點",
+                                                   "item":  "https://themeetingplace.pages.dev/coliving/"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  3,
+                                                   "name":  "中山館",
+                                                   "item":  "https://themeetingplace.pages.dev/locations/zhongshan/"
+                                               }
+                                           ]
                    },
                    {
                        "@type":  "FAQPage",
@@ -89,7 +101,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/assets/css/main.css?v=e9503426f8">
+<link rel="stylesheet" href="/assets/css/main.css?v=8e773f7430">
 </head>
 <body data-page="location-zhongshan" data-lang="zh" data-peer-url="/en/locations/zhongshan/">
 

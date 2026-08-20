@@ -32,7 +32,8 @@
           "email": "themeetingplacetaipei@gmail.com",
           "sameAs": [
             "https://lin.ee/ofPOifH",
-            "https://www.facebook.com/TheMeetingPlaceTaipei"
+            "https://www.facebook.com/TheMeetingPlaceTaipei",
+            "https://www.instagram.com/the_meeting_place9527/"
           ]
         },
         {
@@ -73,6 +74,8 @@
       "contentFile": "pages/property-management.html",
       "outPath": "property-management/index.html",
       "url": "/property-management/",
+      "lang": "zh",
+      "peer": "/en/property-management/",
       "dataPage": "property-management",
       "title": "委託管理｜台北包租代管｜聚空間 THE MEETING PLACE",
       "metaDesc": "聚空間提供台北包租代管服務，從房屋健檢、招租曝光、住客篩選到日常維護與定期回報，協助屋主降低管理負擔，讓房子被穩定、長期地經營。",
@@ -97,6 +100,8 @@
       "contentFile": "pages/contact-landlord.html",
       "outPath": "contact/landlord/index.html",
       "url": "/contact/landlord/",
+      "lang": "zh",
+      "peer": "/en/contact/landlord/",
       "dataPage": "contact-landlord",
       "title": "房屋委託評估｜台北包租代管・出租管理諮詢｜聚空間",
       "metaDesc": "有台北房屋正在考慮出租、代管、包租或空間整理？提供房屋現況與需求，聚空間將依照位置、格局、屋況與出租目標提供初步評估與管理建議。",
@@ -116,12 +121,12 @@
       "ogImage": "/assets/images/songshan-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "聚空間 松山館",
-          "description": "百坪共享空間 × 大家庭共居 × 狗狗陪伴，鄰近松山車站（捷運綠線松山・藍線後山埤）。",
-          "areaServed": "台北市 松山車站週邊（捷運綠線松山・藍線後山埤）",
-          "url": "https://themeetingplace.pages.dev/locations/songshan/",
-          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "松山館", "item": "https://themeetingplace.pages.dev/locations/songshan/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -149,12 +154,12 @@
       "ogImage": "/assets/images/xinyi-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "聚空間 信義館",
-          "description": "交通便利 × 安靜社區 × 舒服採光，鄰近捷運藍線永春站。",
-          "areaServed": "台北市 捷運藍線永春站週邊",
-          "url": "https://themeetingplace.pages.dev/locations/xinyi/",
-          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "信義館", "item": "https://themeetingplace.pages.dev/locations/xinyi/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -182,12 +187,12 @@
       "ogImage": "/assets/images/shida-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "聚空間 師大館",
-          "description": "師大生活圈 × 巷弄日常 × 鬧中取靜，鄰近台灣師範大學與捷運綠線台電大樓站。",
-          "areaServed": "台北市 捷運綠線台電大樓站週邊",
-          "url": "https://themeetingplace.pages.dev/locations/shida/",
-          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "師大館", "item": "https://themeetingplace.pages.dev/locations/shida/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -215,12 +220,12 @@
       "ogImage": "/assets/images/guting1-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "聚空間 古亭1館",
-          "description": "全新空間 × 寬敞陽台 × 工作生活兼具，鄰近捷運綠線台電大樓站・橘線古亭站。",
-          "areaServed": "台北市 捷運綠線台電大樓站・橘線古亭站週邊",
-          "url": "https://themeetingplace.pages.dev/locations/guting1/",
-          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "古亭1館", "item": "https://themeetingplace.pages.dev/locations/guting1/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -248,12 +253,12 @@
       "ogImage": "/assets/images/guting2-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "聚空間 古亭2館",
-          "description": "明亮採光 × 寬敞公共空間 × 舒服共居日常，鄰近捷運綠線台電大樓站・橘線古亭站。",
-          "areaServed": "台北市 捷運綠線台電大樓站・橘線古亭站週邊",
-          "url": "https://themeetingplace.pages.dev/locations/guting2/",
-          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "古亭2館", "item": "https://themeetingplace.pages.dev/locations/guting2/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -281,12 +286,12 @@
       "ogImage": "/assets/images/zhongshan-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "聚空間 中山館",
-          "description": "行天宮生活圈 × 國際交流 × 個性工業風，鄰近捷運橘線行天宮站。",
-          "areaServed": "台北市 捷運橘線行天宮站週邊",
-          "url": "https://themeetingplace.pages.dev/locations/zhongshan/",
-          "brand": { "@type": "Organization", "name": "聚空間 THE MEETING PLACE" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "中山館", "item": "https://themeetingplace.pages.dev/locations/zhongshan/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -309,7 +314,7 @@
       "lang": "en",
       "peer": "/",
       "dataPage": "home",
-      "title": "The Meeting Place｜Taipei Co-Living, Property Management & Renovation",
+      "title": "Taipei Co-Living Apartments | The Meeting Place",
       "metaDesc": "The Meeting Place offers Taipei co-living apartments, property leasing, full-service management and renovation, giving owners peace of mind and residents a true home.",
       "ogImage": "/assets/images/songshan-lounge.jpg",
       "jsonld": [
@@ -329,7 +334,8 @@
           "email": "themeetingplacetaipei@gmail.com",
           "sameAs": [
             "https://lin.ee/ofPOifH",
-            "https://www.facebook.com/TheMeetingPlaceTaipei"
+            "https://www.facebook.com/TheMeetingPlaceTaipei",
+            "https://www.instagram.com/the_meeting_place9527/"
           ]
         },
         {
@@ -373,17 +379,17 @@
       "lang": "en",
       "peer": "/locations/shida/",
       "dataPage": "location-shida",
-      "title": "Student Housing near NTNU Taipei | Shida Apartment | The Meeting Place",
+      "title": "NTNU Student Housing Taipei | Shida Apartment",
       "metaDesc": "Looking for student housing near NTNU in Taipei? Shida Apartment offers furnished co-living rooms for international students, Mandarin learners and exchange students, with convenient access to NTNU, MRT, dining and everyday essentials.",
       "ogImage": "/assets/images/shida-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "The Meeting Place Shida Apartment",
-          "description": "NTNU Neighborhood × Everyday Taipei Life × Quiet & Convenient, near National Taiwan Normal University and Taipower Building MRT Station.",
-          "areaServed": "Taipei, near Taipower Building MRT Station",
-          "url": "https://themeetingplace.pages.dev/en/locations/shida/",
-          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Shida Apartment", "item": "https://themeetingplace.pages.dev/en/locations/shida/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -406,17 +412,17 @@
       "lang": "en",
       "peer": "/locations/guting1/",
       "dataPage": "location-guting1",
-      "title": "Guting Co-Living Taipei | Students, Professionals & Remote Workers | Guting 1 Apartment",
+      "title": "Guting Co-Living Taipei | Guting 1 Apartment",
       "metaDesc": "Guting 1 Apartment is a newly renovated co-living apartment in Taipei with a spacious balcony and work-friendly shared spaces. Convenient for students, professionals and remote workers near Guting, NTNU and NTU.",
       "ogImage": "/assets/images/guting1-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "The Meeting Place Guting 1 Apartment",
-          "description": "Newly Renovated × Spacious Balcony × Work-Life Friendly, near Guting and Taipower Building MRT Stations.",
-          "areaServed": "Taipei, near Guting and Taipower Building MRT Stations",
-          "url": "https://themeetingplace.pages.dev/en/locations/guting1/",
-          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Guting 1 Apartment", "item": "https://themeetingplace.pages.dev/en/locations/guting1/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -439,17 +445,17 @@
       "lang": "en",
       "peer": "/locations/songshan/",
       "dataPage": "location-songshan",
-      "title": "Songshan Co-Living Apartment Taipei | Students &amp; Professionals | The Meeting Place",
+      "title": "Songshan Co-Living Taipei | Songshan Apartment",
       "metaDesc": "Songshan Apartment offers spacious shared areas and a social co-living environment near Songshan Station in Taipei. Ideal for students, professionals and residents who enjoy community living.",
       "ogImage": "/assets/images/songshan-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "The Meeting Place Songshan Apartment",
-          "description": "Spacious Shared Areas × Social Community × Life with Dogs, near Songshan Railway Station and Songshan MRT Station.",
-          "areaServed": "Taipei, near Songshan Railway Station and Songshan MRT Station",
-          "url": "https://themeetingplace.pages.dev/en/locations/songshan/",
-          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Songshan Apartment", "item": "https://themeetingplace.pages.dev/en/locations/songshan/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -472,17 +478,17 @@
       "lang": "en",
       "peer": "/locations/xinyi/",
       "dataPage": "location-xinyi",
-      "title": "Xinyi Co-Living Apartment Taipei | Quiet Shared Housing | The Meeting Place",
+      "title": "Xinyi Co-Living Taipei | Xinyi Apartment",
       "metaDesc": "Xinyi Apartment offers quiet and comfortable co-living near Yongchun MRT Station in Taipei, ideal for professionals and students who value convenient commuting and a calmer home environment.",
       "ogImage": "/assets/images/xinyi-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "The Meeting Place Xinyi Apartment",
-          "description": "Convenient Transportation × Quiet Neighborhood × Comfortable Natural Light, near Yongchun MRT Station.",
-          "areaServed": "Taipei, near Yongchun MRT Station",
-          "url": "https://themeetingplace.pages.dev/en/locations/xinyi/",
-          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Xinyi Apartment", "item": "https://themeetingplace.pages.dev/en/locations/xinyi/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -505,17 +511,17 @@
       "lang": "en",
       "peer": "/locations/zhongshan/",
       "dataPage": "location-zhongshan",
-      "title": "Zhongshan Co-Living Taipei | International Shared Apartment near Xingtian Temple",
+      "title": "Zhongshan Co-Living Taipei | Xingtian Temple",
       "metaDesc": "Zhongshan Apartment offers international co-living near Xingtian Temple MRT Station, with industrial-style shared spaces and convenient access to central Taipei.",
       "ogImage": "/assets/images/zhongshan-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "The Meeting Place Zhongshan Apartment",
-          "description": "Xingtian Temple Neighborhood × International Community × Industrial-Style Interior, near Xingtian Temple MRT Station.",
-          "areaServed": "Taipei, near Xingtian Temple MRT Station",
-          "url": "https://themeetingplace.pages.dev/en/locations/zhongshan/",
-          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Zhongshan Apartment", "item": "https://themeetingplace.pages.dev/en/locations/zhongshan/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -538,17 +544,17 @@
       "lang": "en",
       "peer": "/locations/guting2/",
       "dataPage": "location-guting2",
-      "title": "Guting Co-Living Apartment Taipei | Students &amp; Professionals | Guting 2 Apartment",
+      "title": "Guting Co-Living Taipei | Guting 2 Apartment",
       "metaDesc": "Guting 2 Apartment offers bright, spacious shared areas near Taipower Building and Guting MRT stations. Ideal for students and professionals looking for comfortable co-living in Taipei.",
       "ogImage": "/assets/images/guting2-hero.jpg",
       "jsonld": [
         {
-          "@type": "LodgingBusiness",
-          "name": "The Meeting Place Guting 2 Apartment",
-          "description": "Bright Interiors × Spacious Common Areas × Comfortable Shared Living, near Taipower Building MRT Station.",
-          "areaServed": "Taipei, near Taipower Building MRT Station",
-          "url": "https://themeetingplace.pages.dev/en/locations/guting2/",
-          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Guting 2 Apartment", "item": "https://themeetingplace.pages.dev/en/locations/guting2/" }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -573,6 +579,32 @@
       "dataPage": "contact-tenant",
       "title": "Taipei Co-Living｜Check Availability &amp; Move-In Requests｜The Meeting Place",
       "metaDesc": "Looking for a co-living apartment in Taipei? Tell The Meeting Place your move-in date, length of stay and needs, and we'll help confirm availability and recommend the right location for you.",
+      "ogImage": "/assets/images/songshan-lounge.jpg",
+      "jsonld": null
+    },
+    {
+      "key": "property-management-en",
+      "contentFile": "pages/en/property-management.html",
+      "outPath": "en/property-management/index.html",
+      "url": "/en/property-management/",
+      "lang": "en",
+      "peer": "/property-management/",
+      "dataPage": "property-management",
+      "title": "Taipei Property Management &amp; Rental Solutions | The Meeting Place",
+      "metaDesc": "Property management in Taipei for owners who want a clearer, easier way to rent and manage their property. From rental planning and tenant screening to maintenance and regular updates, The Meeting Place provides practical long-term management solutions.",
+      "ogImage": "/assets/images/songshan-lounge.jpg",
+      "jsonld": null
+    },
+    {
+      "key": "contact-landlord-en",
+      "contentFile": "pages/en/contact-landlord.html",
+      "outPath": "en/contact/landlord/index.html",
+      "url": "/en/contact/landlord/",
+      "lang": "en",
+      "peer": "/contact/landlord/",
+      "dataPage": "contact-landlord",
+      "title": "Property Assessment in Taipei | Rental &amp; Property Management Consultation | The Meeting Place",
+      "metaDesc": "Have a property in Taipei and considering rental management, master leasing, renovation, or space improvement? Tell us about your property and we'll help you assess suitable next steps.",
       "ogImage": "/assets/images/songshan-lounge.jpg",
       "jsonld": null
     }

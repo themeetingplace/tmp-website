@@ -1,0 +1,99 @@
+    <section class="v2-section" id="landlord-form" style="max-width:680px; text-align:center; padding-bottom:56px;">
+      <h2 class="section-tag">Free Property Assessment</h2>
+      <p class="prose" style="font-size:14.5px; color:var(--ink-soft); line-height:1.9;">Tell us a little about your property and we'll review your conditions before contacting you.<br>Only your name and phone number are required; the more details you provide, the faster we can make an initial assessment.</p>
+      <div class="landlord-form-wrap">
+        <form class="landlord-form" id="landlord-lead-form">
+          <div class="landlord-form-row">
+            <div class="landlord-form-field"><label for="ll-name">Name *</label><input type="text" id="ll-name" name="name" required></div>
+            <div class="landlord-form-field"><label for="ll-phone">Phone Number *</label><input type="tel" id="ll-phone" name="phone" required></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field"><label for="ll-line">LINE Contact (Optional)</label><input type="text" id="ll-line" name="line_id" placeholder="LINE ID or display name"></div>
+            <div class="landlord-form-field"><label for="ll-email">Email</label><input type="email" id="ll-email" name="email"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field"><label for="ll-city">City / County *</label>
+              <select id="ll-city" name="city" required>
+                <option value="" disabled selected>Select city / county</option>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>基隆市</option>
+                <option>桃園市</option>
+                <option>新竹市</option>
+                <option>新竹縣</option>
+                <option>苗栗縣</option>
+                <option>台中市</option>
+                <option>彰化縣</option>
+                <option>南投縣</option>
+                <option>雲林縣</option>
+                <option>嘉義市</option>
+                <option>嘉義縣</option>
+                <option>台南市</option>
+                <option>高雄市</option>
+                <option>屏東縣</option>
+                <option>宜蘭縣</option>
+                <option>花蓮縣</option>
+                <option>台東縣</option>
+                <option>澎湖縣</option>
+                <option>金門縣</option>
+                <option>連江縣</option>
+              </select>
+            </div>
+            <div class="landlord-form-field"><label for="ll-district">District *</label>
+              <select id="ll-district" name="district" required disabled>
+                <option value="" disabled selected>Select city / county first</option>
+              </select>
+            </div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field"><label for="ll-type">Property Type</label><input type="text" id="ll-type" name="property_type" placeholder="e.g. walk-up apartment, apartment building, townhouse"></div>
+            <div class="landlord-form-field"><label for="ll-acreage">Property Size</label><input type="number" id="ll-acreage" name="acreage" min="0" step="0.1"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field"><label for="ll-rooms">Number of Rooms</label><input type="number" id="ll-rooms" name="room_count" min="0" step="1"></div>
+            <div class="landlord-form-field"><label for="ll-timing">Expected Rental Timeline</label><input type="text" id="ll-timing" name="timing" placeholder="e.g. within one month"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full">
+              <label>Current Status</label>
+              <div class="pm-checkbox-group">
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="vacant">Vacant</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="occupied-self">Owner-occupied</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="rented">Currently rented</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="ending-soon">Tenant moving out soon</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="renovating">Under renovation</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="status[]" value="other">Other</label>
+              </div>
+            </div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full">
+              <label>Services You're Interested In</label>
+              <div class="pm-checkbox-group">
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="lease-management">Rental Management</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="master-lease">Master Leasing</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="planning">Rental Planning</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="cleanup">Space Improvement / Repairs</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="renovation">Renovation</label>
+                <label class="pm-checkbox-item"><input type="checkbox" name="service[]" value="unsure">Not Sure — I'd Like an Assessment First</label>
+              </div>
+            </div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-problem">What would you most like help with?</label><input type="text" id="ll-problem" name="main_problem" placeholder="e.g. I'm not sure whether I should renovate before renting"></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-photos">Property Photos (Optional)</label><input type="file" id="ll-photos" name="photos" accept="image/*" multiple><p class="landlord-form-note" style="margin:4px 0 0;">If convenient, uploading current photos can help us understand the property more quickly.</p></div>
+          </div>
+          <div class="landlord-form-row">
+            <div class="landlord-form-field full"><label for="ll-message">Additional Notes</label><textarea id="ll-message" name="message" placeholder="Anything else you'd like us to know…"></textarea></div>
+          </div>
+          <p class="landlord-form-note">By submitting this form, you agree to be contacted by The Meeting Place. Your information will only be used for this consultation.</p>
+          <button type="submit" class="landlord-form-submit">Submit Property Details</button>
+        </form>
+        <div class="landlord-form-success" id="landlord-form-success">
+          <p style="font-size:17px; font-weight:700; color:var(--ink); margin-bottom:10px;">Thank You</p>
+          <p style="font-size:14px; color:var(--ink-soft); line-height:1.8;">We've received your information and will contact you as soon as possible.<br>If you need to reach us directly, you can also call 02-7752-7679.</p>
+        </div>
+      </div>
+    </section>
