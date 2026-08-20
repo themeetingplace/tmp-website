@@ -342,7 +342,7 @@
     .v2-ct-card { padding: 24px 22px; }
   }
   .ct-panel p { font-size: 17px; color: var(--ink); line-height: 2; text-align: center; }
-  .ct-panel a { color: var(--tenant); font-weight: 700; word-break: break-all; }
+  .ct-panel a { color: var(--tenant); font-weight: 700; }
   .ct-panel.landlord a { color: var(--landlord); }
   .ct-panel.v2-striped { background: var(--accent-soft); background-image: repeating-linear-gradient(135deg, rgba(232,126,59,.1) 0 14px, transparent 14px 28px); }
   .v2-ct-card h3 { font-size: 22px; font-weight: 700; color: var(--ink); text-align: center; margin: 0 0 14px; }
