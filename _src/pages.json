@@ -106,6 +106,8 @@
       "contentFile": "pages/locations/songshan.html",
       "outPath": "locations/songshan/index.html",
       "url": "/locations/songshan/",
+      "lang": "zh",
+      "peer": "/en/locations/songshan/",
       "dataPage": "location-songshan",
       "title": "台北松山共居公寓｜學生・上班族租屋住宿｜聚空間松山館",
       "metaDesc": "聚空間松山館位於台北松山生活圈，鄰近松山車站與捷運松山站，提供多人房與百坪共享空間，適合學生、上班族及喜歡室友交流的住客。查看房型、租金、交通與入住資訊。",
@@ -137,6 +139,8 @@
       "contentFile": "pages/locations/xinyi.html",
       "outPath": "locations/xinyi/index.html",
       "url": "/locations/xinyi/",
+      "lang": "zh",
+      "peer": "/en/locations/xinyi/",
       "dataPage": "location-xinyi",
       "title": "台北信義共居公寓｜上班族・學生租屋住宿｜聚空間信義館",
       "metaDesc": "聚空間信義館位於台北信義生活圈，鄰近捷運永春站，提供安靜舒適的共居住宿與多人房型，適合上班族、學生及重視交通與生活品質的住客。查看房型、租金、交通與入住資訊。",
@@ -234,6 +238,8 @@
       "contentFile": "pages/locations/guting2.html",
       "outPath": "locations/guting2/index.html",
       "url": "/locations/guting2/",
+      "lang": "zh",
+      "peer": "/en/locations/guting2/",
       "dataPage": "location-guting2",
       "title": "台北古亭共居公寓｜學生・上班族租屋住宿｜聚空間古亭2館",
       "metaDesc": "聚空間古亭2館位於台北古亭生活圈，提供明亮寬敞的公共空間與多人共居房型，適合學生、上班族與重視共享生活品質的住客。查看房型、租金、交通與入住資訊。",
@@ -265,6 +271,8 @@
       "contentFile": "pages/locations/zhongshan.html",
       "outPath": "locations/zhongshan/index.html",
       "url": "/locations/zhongshan/",
+      "lang": "zh",
+      "peer": "/en/locations/zhongshan/",
       "dataPage": "location-zhongshan",
       "title": "台北行天宮共居公寓｜外籍學生・上班族租屋｜聚空間中山館",
       "metaDesc": "聚空間中山館位於台北中山區行天宮生活圈，鄰近捷運行天宮站，提供多人共居房型與工業風共享空間，適合外籍學生、上班族與喜歡國際交流的住客。",
@@ -404,6 +412,138 @@
             { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen with basic cooking equipment is available." } },
             { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender, while common areas are shared by all residents." } },
             { "@type": "Question", "name": "How can I check current availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents, and we'll help you check available rooms." } }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "location-songshan-en",
+      "contentFile": "pages/en/locations/songshan.html",
+      "outPath": "en/locations/songshan/index.html",
+      "url": "/en/locations/songshan/",
+      "lang": "en",
+      "peer": "/locations/songshan/",
+      "dataPage": "location-songshan",
+      "title": "Songshan Co-Living Apartment Taipei | Students &amp; Professionals | The Meeting Place",
+      "metaDesc": "Songshan Apartment offers spacious shared areas and a social co-living environment near Songshan Station in Taipei. Ideal for students, professionals and residents who enjoy community living.",
+      "ogImage": "/assets/images/songshan-hero.jpg",
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "The Meeting Place Songshan Apartment",
+          "description": "Spacious Shared Areas × Social Community × Life with Dogs, near Songshan Railway Station and Songshan MRT Station.",
+          "areaServed": "Taipei, near Songshan Railway Station and Songshan MRT Station",
+          "url": "https://themeetingplace.pages.dev/en/locations/songshan/",
+          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Please send us your expected move-in date and length of stay to check availability." } },
+            { "@type": "Question", "name": "Can international students stay here?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We regularly welcome international students, exchange students and Mandarin learners coming to Taipei." } },
+            { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender. Common areas are shared by all residents." } },
+            { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen and basic cooking equipment are available." } },
+            { "@type": "Question", "name": "Are there dogs at Songshan Apartment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Dogs are part of daily life at Songshan Apartment. If you are allergic to or uncomfortable around dogs, please let us know before booking." } },
+            { "@type": "Question", "name": "How can I check availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your expected move-in date, length of stay, gender and number of residents, and we'll help you check suitable room options." } }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "location-xinyi-en",
+      "contentFile": "pages/en/locations/xinyi.html",
+      "outPath": "en/locations/xinyi/index.html",
+      "url": "/en/locations/xinyi/",
+      "lang": "en",
+      "peer": "/locations/xinyi/",
+      "dataPage": "location-xinyi",
+      "title": "Xinyi Co-Living Apartment Taipei | Quiet Shared Housing | The Meeting Place",
+      "metaDesc": "Xinyi Apartment offers quiet and comfortable co-living near Yongchun MRT Station in Taipei, ideal for professionals and students who value convenient commuting and a calmer home environment.",
+      "ogImage": "/assets/images/xinyi-hero.jpg",
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "The Meeting Place Xinyi Apartment",
+          "description": "Convenient Transportation × Quiet Neighborhood × Comfortable Natural Light, near Yongchun MRT Station.",
+          "areaServed": "Taipei, near Yongchun MRT Station",
+          "url": "https://themeetingplace.pages.dev/en/locations/xinyi/",
+          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Availability depends on your move-in date and length of stay." } },
+            { "@type": "Question", "name": "Is Xinyi Apartment suitable for working professionals?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Its quieter environment and convenient transportation make it particularly suitable for residents with regular work commutes." } },
+            { "@type": "Question", "name": "Can international residents stay here?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We regularly welcome international students and overseas residents." } },
+            { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen and basic cooking equipment are available." } },
+            { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender, while common areas are shared by residents." } },
+            { "@type": "Question", "name": "How can I check availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents, and we'll help you check current availability." } }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "location-zhongshan-en",
+      "contentFile": "pages/en/locations/zhongshan.html",
+      "outPath": "en/locations/zhongshan/index.html",
+      "url": "/en/locations/zhongshan/",
+      "lang": "en",
+      "peer": "/locations/zhongshan/",
+      "dataPage": "location-zhongshan",
+      "title": "Zhongshan Co-Living Taipei | International Shared Apartment near Xingtian Temple",
+      "metaDesc": "Zhongshan Apartment offers international co-living near Xingtian Temple MRT Station, with industrial-style shared spaces and convenient access to central Taipei.",
+      "ogImage": "/assets/images/zhongshan-hero.jpg",
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "The Meeting Place Zhongshan Apartment",
+          "description": "Xingtian Temple Neighborhood × International Community × Industrial-Style Interior, near Xingtian Temple MRT Station.",
+          "areaServed": "Taipei, near Xingtian Temple MRT Station",
+          "url": "https://themeetingplace.pages.dev/en/locations/zhongshan/",
+          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is Zhongshan Apartment suitable for international residents?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Zhongshan Apartment has a diverse mix of residents and is particularly suitable for international students and overseas residents who would like to meet people from different backgrounds." } },
+            { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Availability depends on your move-in date and length of stay." } },
+            { "@type": "Question", "name": "Is Zhongshan Apartment close to the MRT?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is near Xingtian Temple MRT Station, making it convenient to travel around central Taipei." } },
+            { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen and basic cooking equipment are available." } },
+            { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender. Common areas are shared." } },
+            { "@type": "Question", "name": "How can I check availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents." } }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "location-guting2-en",
+      "contentFile": "pages/en/locations/guting2.html",
+      "outPath": "en/locations/guting2/index.html",
+      "url": "/en/locations/guting2/",
+      "lang": "en",
+      "peer": "/locations/guting2/",
+      "dataPage": "location-guting2",
+      "title": "Guting Co-Living Apartment Taipei | Students &amp; Professionals | Guting Apartment 2",
+      "metaDesc": "Guting 2 Apartment offers bright, spacious shared areas near Taipower Building and Guting MRT stations. Ideal for students and professionals looking for comfortable co-living in Taipei.",
+      "ogImage": "/assets/images/guting2-hero.jpg",
+      "jsonld": [
+        {
+          "@type": "LodgingBusiness",
+          "name": "The Meeting Place Guting 2 Apartment",
+          "description": "Bright Interiors × Spacious Common Areas × Comfortable Shared Living, near Taipower Building MRT Station.",
+          "areaServed": "Taipei, near Taipower Building MRT Station",
+          "url": "https://themeetingplace.pages.dev/en/locations/guting2/",
+          "brand": { "@type": "Organization", "name": "The Meeting Place" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is Guting 2 Apartment suitable for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Guting is conveniently located near NTNU, NTU and several other campuses." } },
+            { "@type": "Question", "name": "What is the minimum stay?", "acceptedAnswer": { "@type": "Answer", "text": "The minimum stay is 30 days. Availability depends on your move-in date." } },
+            { "@type": "Question", "name": "Does Guting 2 Apartment have large common areas?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. One of its main features is the spacious living room and shared dining table." } },
+            { "@type": "Question", "name": "Can I cook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A shared kitchen and basic cooking equipment are available." } },
+            { "@type": "Question", "name": "Do male and female residents share the same bedroom?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bedrooms are arranged by gender. Common areas are shared." } },
+            { "@type": "Question", "name": "How can I check availability?", "acceptedAnswer": { "@type": "Answer", "text": "Send us your move-in date, expected length of stay, gender and number of residents, and we'll help you check current room options." } }
           ]
         }
       ]
