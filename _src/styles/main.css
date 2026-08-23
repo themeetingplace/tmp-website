@@ -419,6 +419,8 @@
   .asset-case-after1 { background-image: url("/assets/images/case-after1.jpg"); background-size: cover; background-position: center; }
   .asset-case-before2 { background-image: url("/assets/images/case-before2.jpg"); background-size: cover; background-position: center; }
   .asset-case-after2 { background-image: url("/assets/images/case-after2.jpg"); background-size: cover; background-position: center; }
+  .asset-case-before3 { background-image: url("/assets/images/case-before3.jpg"); background-size: cover; background-position: center; }
+  .asset-case-after3 { background-image: url("/assets/images/case-after3.jpg"); background-size: cover; background-position: center; }
   .section-tag { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; font-size: 24px; padding: 7px 20px; border-radius: 8px; margin-bottom: 22px; }
   .v2-section { max-width: 1080px; margin: 56px auto 0; padding: 0 24px; }
   .landlord-care-wrap { position: relative; background: #F7F0E4; padding: 48px 0 76px; margin-top: 56px; }
