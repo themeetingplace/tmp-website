@@ -1,6 +1,6 @@
 {
   "siteName": "聚空間 THE MEETING PLACE",
-  "baseUrl": "https://themeetingplace.pages.dev",
+  "baseUrl": "https://themeetingplace.tw",
   "defaultOgImage": "/assets/images/songshan-lounge.jpg",
   "pages": [
     {
@@ -19,8 +19,8 @@
         {
           "@type": "Organization",
           "name": "聚空間 THE MEETING PLACE",
-          "url": "https://themeetingplace.pages.dev/",
-          "logo": "https://themeetingplace.pages.dev/assets/images/logo-full-white.png",
+          "url": "https://themeetingplace.tw/",
+          "logo": "https://themeetingplace.tw/assets/images/logo-full-white.png",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "昆明街316號",
@@ -39,7 +39,7 @@
         {
           "@type": "WebSite",
           "name": "聚空間 THE MEETING PLACE",
-          "url": "https://themeetingplace.pages.dev/"
+          "url": "https://themeetingplace.tw/"
         }
       ]
     },
@@ -123,9 +123,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "松山館", "item": "https://themeetingplace.pages.dev/locations/songshan/" }
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.tw/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.tw/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "松山館", "item": "https://themeetingplace.tw/locations/songshan/" }
           ]
         },
         {
@@ -156,9 +156,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "信義館", "item": "https://themeetingplace.pages.dev/locations/xinyi/" }
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.tw/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.tw/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "信義館", "item": "https://themeetingplace.tw/locations/xinyi/" }
           ]
         },
         {
@@ -189,9 +189,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "師大館", "item": "https://themeetingplace.pages.dev/locations/shida/" }
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.tw/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.tw/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "師大館", "item": "https://themeetingplace.tw/locations/shida/" }
           ]
         },
         {
@@ -222,9 +222,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "古亭1館", "item": "https://themeetingplace.pages.dev/locations/guting1/" }
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.tw/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.tw/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "古亭1館", "item": "https://themeetingplace.tw/locations/guting1/" }
           ]
         },
         {
@@ -255,9 +255,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "古亭2館", "item": "https://themeetingplace.pages.dev/locations/guting2/" }
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.tw/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.tw/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "古亭2館", "item": "https://themeetingplace.tw/locations/guting2/" }
           ]
         },
         {
@@ -288,9 +288,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.pages.dev/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "中山館", "item": "https://themeetingplace.pages.dev/locations/zhongshan/" }
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://themeetingplace.tw/" },
+            { "@type": "ListItem", "position": 2, "name": "共居據點", "item": "https://themeetingplace.tw/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "中山館", "item": "https://themeetingplace.tw/locations/zhongshan/" }
           ]
         },
         {
@@ -321,8 +321,8 @@
         {
           "@type": "Organization",
           "name": "The Meeting Place",
-          "url": "https://themeetingplace.pages.dev/en/",
-          "logo": "https://themeetingplace.pages.dev/assets/images/logo-full-white.png",
+          "url": "https://themeetingplace.tw/en/",
+          "logo": "https://themeetingplace.tw/assets/images/logo-full-white.png",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "No. 316, Kunming St",
@@ -341,7 +341,7 @@
         {
           "@type": "WebSite",
           "name": "The Meeting Place",
-          "url": "https://themeetingplace.pages.dev/en/"
+          "url": "https://themeetingplace.tw/en/"
         }
       ]
     },
@@ -386,9 +386,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
-            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "Shida Apartment", "item": "https://themeetingplace.pages.dev/en/locations/shida/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.tw/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.tw/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Shida Apartment", "item": "https://themeetingplace.tw/en/locations/shida/" }
           ]
         },
         {
@@ -419,9 +419,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
-            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "Guting 1 Apartment", "item": "https://themeetingplace.pages.dev/en/locations/guting1/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.tw/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.tw/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Guting 1 Apartment", "item": "https://themeetingplace.tw/en/locations/guting1/" }
           ]
         },
         {
@@ -452,9 +452,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
-            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "Songshan Apartment", "item": "https://themeetingplace.pages.dev/en/locations/songshan/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.tw/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.tw/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Songshan Apartment", "item": "https://themeetingplace.tw/en/locations/songshan/" }
           ]
         },
         {
@@ -485,9 +485,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
-            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "Xinyi Apartment", "item": "https://themeetingplace.pages.dev/en/locations/xinyi/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.tw/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.tw/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Xinyi Apartment", "item": "https://themeetingplace.tw/en/locations/xinyi/" }
           ]
         },
         {
@@ -518,9 +518,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
-            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "Zhongshan Apartment", "item": "https://themeetingplace.pages.dev/en/locations/zhongshan/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.tw/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.tw/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Zhongshan Apartment", "item": "https://themeetingplace.tw/en/locations/zhongshan/" }
           ]
         },
         {
@@ -551,9 +551,9 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.pages.dev/en/" },
-            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.pages.dev/en/coliving/" },
-            { "@type": "ListItem", "position": 3, "name": "Guting 2 Apartment", "item": "https://themeetingplace.pages.dev/en/locations/guting2/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://themeetingplace.tw/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Co-Living", "item": "https://themeetingplace.tw/en/coliving/" },
+            { "@type": "ListItem", "position": 3, "name": "Guting 2 Apartment", "item": "https://themeetingplace.tw/en/locations/guting2/" }
           ]
         },
         {

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_src/
 
-Sitemap: https://themeetingplace.pages.dev/sitemap.xml
+Sitemap: https://themeetingplace.tw/sitemap.xml
