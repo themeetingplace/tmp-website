@@ -167,13 +167,97 @@
   }
 })();
 (function () {
+  var SUPABASE_URL = 'https://mkatwwouurwxlruisqwe.supabase.co';
+  var SUPABASE_PUBLISHABLE_KEY = 'sb_publishable__CepJC3ggYmoXBXSx0ETxA_0_RnWJCY';
+
+  function textValue(form, name) {
+    var field = form.elements.namedItem(name);
+    return field ? String(field.value || '').trim() : '';
+  }
+
+  function checkedValues(form, name) {
+    return Array.prototype.map.call(form.querySelectorAll('input[name="' + name + '"]:checked'), function (input) {
+      return input.value;
+    });
+  }
+
   document.querySelectorAll('.landlord-form').forEach(function (llForm) {
     var llSuccess = llForm.parentElement.querySelector('.landlord-form-success');
     if (!llSuccess) return;
-    llForm.addEventListener('submit', function (e) {
+    llForm.addEventListener('submit', async function (e) {
       e.preventDefault();
-      llForm.classList.add('is-hidden');
-      llSuccess.classList.add('is-shown');
+      if (llForm.dataset.submitting === '1') return;
+
+      var isEnglish = document.body.getAttribute('data-lang') === 'en';
+      var submitButton = llForm.querySelector('[type="submit"]');
+      var originalLabel = submitButton ? submitButton.textContent : '';
+      var errorMessage = llForm.querySelector('.landlord-form-error');
+      if (!errorMessage) {
+        errorMessage = document.createElement('p');
+        errorMessage.className = 'landlord-form-error';
+        errorMessage.setAttribute('role', 'alert');
+        if (submitButton) submitButton.parentNode.insertBefore(errorMessage, submitButton);
+      }
+      errorMessage.textContent = '';
+      errorMessage.classList.remove('is-shown');
+
+      var city = textValue(llForm, 'city');
+      var district = textValue(llForm, 'district');
+      var payload = {
+        name: textValue(llForm, 'name'),
+        phone: textValue(llForm, 'phone'),
+        line_id: textValue(llForm, 'line_id') || null,
+        email: textValue(llForm, 'email') || null,
+        area: [city, district].filter(Boolean).join(' '),
+        property_type: textValue(llForm, 'property_type') || null,
+        acreage: textValue(llForm, 'acreage') ? Number(textValue(llForm, 'acreage')) : null,
+        room_count: textValue(llForm, 'room_count') ? Number(textValue(llForm, 'room_count')) : null,
+        timing: textValue(llForm, 'timing') || null,
+        property_status: checkedValues(llForm, 'status[]'),
+        services: checkedValues(llForm, 'service[]'),
+        main_problem: textValue(llForm, 'main_problem') || null,
+        message: textValue(llForm, 'message') || null,
+        status: 'new',
+        source: 'website'
+      };
+
+      llForm.dataset.submitting = '1';
+      llForm.setAttribute('aria-busy', 'true');
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = isEnglish ? 'Submitting…' : '資料送出中…';
+      }
+
+      try {
+        var response = await fetch(SUPABASE_URL + '/rest/v1/management_leads', {
+          method: 'POST',
+          headers: {
+            apikey: SUPABASE_PUBLISHABLE_KEY,
+            'Content-Type': 'application/json',
+            Prefer: 'return=minimal'
+          },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) throw new Error('HTTP ' + response.status + ': ' + (await response.text()));
+        llForm.reset();
+        llForm.classList.add('is-hidden');
+        llSuccess.classList.add('is-shown');
+        llSuccess.setAttribute('tabindex', '-1');
+        llSuccess.focus();
+      } catch (error) {
+        console.error('[landlord-form] submit failed', error);
+        errorMessage.textContent = isEnglish
+          ? 'We could not submit your information. Please try again, or call 02-7752-7679.'
+          : '資料送出失敗，請稍後再試，或直接來電 02-77527679。';
+        errorMessage.classList.add('is-shown');
+      } finally {
+        delete llForm.dataset.submitting;
+        llForm.removeAttribute('aria-busy');
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalLabel;
+        }
+      }
     });
   });
 })();

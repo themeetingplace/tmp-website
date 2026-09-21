@@ -521,6 +521,9 @@
   .landlord-form-note { font-size: 12px; color: var(--ink-faint); margin: -6px 0 18px; }
   .landlord-form-submit { display: block; width: 100%; margin-top: 8px; padding: 14px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 15px; font-weight: 700; border: none; cursor: pointer; transition: transform .15s ease; }
   .landlord-form-submit:hover { transform: translateY(-2px); }
+  .landlord-form-submit:disabled { cursor: wait; opacity: .68; transform: none; }
+  .landlord-form-error { display: none; margin: 0 0 12px; padding: 10px 12px; border-radius: 8px; background: #fff1f0; color: #9f3029; font-size: 13px; line-height: 1.6; text-align: left; }
+  .landlord-form-error.is-shown { display: block; }
   .landlord-form.is-hidden { display: none; }
   .landlord-form-success { display: none; text-align: center; padding: 30px 10px; }
   .landlord-form-success.is-shown { display: block; }
