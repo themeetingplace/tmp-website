@@ -120,12 +120,6 @@
   .photo-zhongshan-s3 { background-size: cover; background-position: center; background-color: transparent; background-image: url("/assets/images/zhongshan-s3.jpg"); }
   .photo-zhongshan-s4 { background-size: cover; background-position: center; background-color: transparent; background-image: url("/assets/images/zhongshan-s4.jpg"); }
   .photo-zhongshan-s6 { background-size: cover; background-position: center; background-color: transparent; background-image: url("/assets/images/zhongshan-s6.jpg"); }
-  .asset-map2-songshan { background-image: url("/assets/images/map2-songshan.jpg?v=2"); }
-  .asset-map2-xinyi { background-image: url("/assets/images/map2-xinyi.jpg?v=2"); }
-  .asset-map2-shida { background-image: url("/assets/images/map2-shida.jpg?v=2"); }
-  .asset-map2-guting1 { background-image: url("/assets/images/map2-guting1.jpg?v=2"); }
-  .asset-map2-guting2 { background-image: url("/assets/images/map2-guting2.jpg?v=2"); }
-  .asset-map2-zhongshan { background-image: url("/assets/images/map2-zhongshan.jpg?v=2"); }
   .lang-toggle { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-soft); border: 1px solid var(--line-strong); padding: 4px 9px; }
 
   /* buttons */
@@ -414,7 +408,6 @@
   }
   .photo-about-hero { background-image: url("/assets/images/about-hero3.jpg"); background-size: cover; background-position: center; }
 
-  .asset-map2 { width: 100%; height: 100%; background-size: cover; background-position: center; }
   .asset-case-before1 { background-image: url("/assets/images/case-before1.jpg"); background-size: cover; background-position: center; }
   .asset-case-after1 { background-image: url("/assets/images/case-after1.jpg"); background-size: cover; background-position: center; }
   .asset-case-before2 { background-image: url("/assets/images/case-before2.jpg"); background-size: cover; background-position: center; }
@@ -533,6 +526,15 @@
   }
   .v2-highlight-wrap { background: var(--accent-soft); padding: 48px 0 64px; margin-top: 48px; }
   .v2-map-frame { margin-top: 24px; height: 340px; border: 1px solid var(--line-strong); overflow: hidden; }
+  .google-map-frame { border-radius: 16px; background: var(--paper-raised); }
+  .google-map-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+  .google-map-actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 12px; color: var(--ink-soft); font-size: 14px; text-align: left; }
+  .google-map-actions a { color: var(--accent-ink); font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
+  .google-map-actions a:hover { color: var(--accent); }
+  @media (max-width: 640px) {
+    .v2-map-frame { height: 300px; }
+    .google-map-actions { align-items: flex-start; flex-direction: column; gap: 6px; }
+  }
   .v2-room-table { width: 100%; border-collapse: collapse; margin-top: 22px; font-size: 13.5px; }
   .v2-room-table th, .v2-room-table td { border: 1px solid var(--line-strong); padding: 11px 16px; text-align: center; }
   .v2-room-table th { background: var(--paper-raised); font-weight: 700; }
