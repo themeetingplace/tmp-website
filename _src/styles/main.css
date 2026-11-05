@@ -940,6 +940,11 @@
     .rent-update-modal-body { margin-top: 17px; padding-top: 15px; }
     .rent-update-modal-body p { font-size: 13.5px; line-height: 1.7; }
     .rent-update-facts { grid-template-columns: 1fr; gap: 7px; margin: 14px 0; }
-    .rent-update-fact { min-height: 0; }
+    .rent-update-fact {
+      width: 100%;
+      min-height: 0;
+      letter-spacing: 0;
+      text-wrap: wrap;
+    }
     .rent-update-modal-actions { margin-top: 16px; }
   }
