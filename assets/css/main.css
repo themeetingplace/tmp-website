@@ -944,7 +944,9 @@
       width: 100%;
       min-height: 0;
       letter-spacing: 0;
-      text-wrap: wrap;
+      text-wrap: initial;
+      text-wrap-mode: wrap;
+      text-wrap-style: auto;
     }
     .rent-update-modal-actions { margin-top: 16px; }
   }
